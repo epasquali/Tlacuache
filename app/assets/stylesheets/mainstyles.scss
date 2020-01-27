@@ -1,0 +1,68 @@
+$theme-colors: (
+   orange: #ff533d,
+   green: #0bb688
+);
+
+@import "bootstrap";
+//@import '@fortawesome/fontawesome-free';
+
+
+/****************************************************************************
+*Colors
+****************************************************************************/
+
+.bg-black
+{
+  background-color: #292a2d;
+}
+
+.btn-green
+{
+  //@include button-variant(#0bb688, #0bb688, #0bb666, #444, #333,yellow);
+}
+
+/****************************************************************************
+*The Navbar
+****************************************************************************/
+
+
+
+.top 
+{
+  min-height: 80px;
+}
+
+.navbar-dark .navbar-nav .nav-link
+{
+  color: #dee2e4;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover
+{
+  color: white;
+}
+
+
+
+/****************************************************************************
+*The Carousel
+****************************************************************************/
+#mainslider
+{
+  margin-top: 1px;
+}
+
+#mainslider .carousel-item
+{
+  max-height: 645px;
+}
+
+.carousel-item.t10 > img 
+{
+  transform: translate(0, -10%);
+}
+
+.carousel-item.t15 > img 
+{
+  transform: translate(0, -15%);
+}

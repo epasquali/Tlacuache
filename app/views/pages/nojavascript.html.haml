@@ -1,0 +1,8 @@
+.page-wrapper
+
+  %h4.box-title.text-center.pb-3.page-header.text-danger
+    =t 'javascriptdisabled'
+
+  =t 'wehavedetected'
+  = link_to (t 'instructions'), "https://www.enable-javascript.com" + "/" + I18n.locale.to_s
+  =t 'toenablejs'
