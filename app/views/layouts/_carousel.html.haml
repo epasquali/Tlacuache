@@ -1,4 +1,4 @@
-#mainslider.carousel.slide{"data-ride" => "carousel"}
+#mainslider.carousel.slide.carousel-fade{"data-ride" => "carousel"}
   %ol.carousel-indicators
     %li.active{"data-slide-to" => "0", "data-target" => "#mainslider"}
     %li{"data-slide-to" => "1", "data-target" => "#mainslider"}
@@ -7,6 +7,10 @@
   .carousel-inner
     .carousel-item.t15.active
       = image_tag "flowers.jpg", class: 'd-block w-100'
+      .carousel-caption.text-left
+        %h1 This is the first caption
+        %p This is the blurb. with lots of lines I guess
+    
     .carousel-item.t10
       =image_tag "lemur.jpg", class: 'd-block w-100'
     .carousel-item.t15

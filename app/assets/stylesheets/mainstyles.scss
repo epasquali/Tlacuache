@@ -4,7 +4,7 @@ $theme-colors: (
 );
 
 @import "bootstrap";
-//@import '@fortawesome/fontawesome-free';
+
 
 
 /****************************************************************************
@@ -16,10 +16,22 @@ $theme-colors: (
   background-color: #292a2d;
 }
 
+.bg-grey
+{
+  background-color: #474747; 
+}
+
+.bg-midgrey
+{
+  background-color: #686868;
+}
+
 .btn-green
 {
-  //@include button-variant(#0bb688, #0bb688, #0bb666, #444, #333,yellow);
+  @include button-variant(#0bb688, #0bb688, #0bb691, #444, #333, white);
 }
+
+
 
 /****************************************************************************
 *The Navbar
@@ -41,6 +53,8 @@ $theme-colors: (
 {
   color: white;
 }
+
+
 
 
 
@@ -66,3 +80,45 @@ $theme-colors: (
 {
   transform: translate(0, -15%);
 }
+
+
+
+
+/******************************************************************************
+* Footers, links
+******************************************************************************/
+
+.midfooter
+{
+  padding: 60px 40px;
+  background-color: #171919;
+  color: white;
+}
+
+.midfooterblock
+{
+  padding: 0px 50px;
+}
+
+.midfooter .block-title
+{
+  color: #17aecb;
+}
+
+.block-body
+{
+  text-align: justify;
+  font-size: 0.9em;
+}
+.bottom
+{
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.bluebg
+{
+    background-color: #5F94C3;
+}
+
+
