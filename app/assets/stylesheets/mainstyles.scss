@@ -161,6 +161,12 @@ $theme-colors: (
   text-align: justify;
   font-size: 0.9em;
 }
+
+.block-body > a
+{
+  color: white;
+}
+
 .bottom
 {
   position: relative;

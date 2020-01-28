@@ -1,0 +1,5 @@
+default: &default
+  socialmedia:
+    facebook: "https://www.facebook.com/Tlacuache.org/"
+    twitter: "http://www.twitter.com/tlacuacheorg"
+    instagram: "https://www.instagram.com/tlacuacheorg/"
