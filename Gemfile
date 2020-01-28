@@ -60,6 +60,8 @@ group :test do
   gem 'minitest-reporters'
   gem 'win32console'
   gem 'rails-controller-testing'
+  gem 'guard'
+  gem 'guard-minitest'
 end
 
 

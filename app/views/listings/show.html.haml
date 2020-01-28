@@ -1,0 +1,15 @@
+%p#notice= notice
+
+.listing-wrapper
+  .card.mt-3
+    .card-header.bg-lightgrey.mb-0
+      %h5.card-title.text-center
+        = @listing.title
+            
+    .card-body
+      = @listing.description
+
+.text-center
+  = link_to 'Editar', edit_listing_path(@listing)
+  \|
+  = link_to 'Regresar', listings_path

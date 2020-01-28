@@ -1,0 +1,19 @@
+= form_for @listing do |f|
+  - if @listing.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@listing.errors.count, "error")} prohibited this listing from being saved:"
+      %ul
+        - @listing.errors.full_messages.each do |message|
+          %li= message
+
+  .form-group
+    = f.label :title, 'Título del anuncio:'
+    = f.text_field :title, class: 'form-control'
+
+  .form-group
+    = f.label :description, 'Descripción:'
+    = f.text_area :description, class: 'form-control'
+  
+  
+  .form-group.text-center
+    = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}

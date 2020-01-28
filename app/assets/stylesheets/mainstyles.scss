@@ -26,6 +26,12 @@ $theme-colors: (
   background-color: #686868;
 }
 
+.bg-lightgrey
+{
+  background-color:  #dbdada;
+}
+
+
 .btn-green
 {
   @include button-variant(#0bb688, #0bb688, #0bb691, #444, #333, white);
@@ -81,12 +87,57 @@ $theme-colors: (
   transform: translate(0, -15%);
 }
 
+/******************************************************************************
+* Wrappers and containers
+******************************************************************************/
 
+.page-wrapper
+{
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 50px !important;
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+  text-align: justify;
+}
 
+.form-wrapper 
+{
+  width: 60%;
+  margin: 20px auto;
+  margin-top: 50px !important;
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+  border: 1px solid #eeefef;
+  border-radius: 3px;
+}
+
+.listing-wrapper
+{
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 50px !important;
+  background-color: #fff;
+  padding: 20px 40px 40px 40px;
+  text-align: center;
+}
 
 /******************************************************************************
-* Footers, links
+* Headers/Banners, Footers, links
 ******************************************************************************/
+
+.banner
+{
+  margin-top: 1px;
+  background-image: url('titlebanner.jpeg');
+  background-size: cover;
+  background-position: 0%, -15%;
+  height: 150px;
+  
+}
+
 
 .midfooter
 {

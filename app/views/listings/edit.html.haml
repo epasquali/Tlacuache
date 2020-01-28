@@ -1,0 +1,9 @@
+.form-wrapper
+  %h3.text-center.mb-5 Editar anuncio
+
+  = render 'form', buttoncaption: 'Actualizar', debouncecaption: 'Actualizando...'
+
+.text-center
+  = link_to 'Mostrar', @listing
+  \|
+  = link_to 'Regresar', listings_path
