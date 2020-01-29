@@ -4,6 +4,7 @@ $theme-colors: (
 );
 
 @import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 
 
@@ -34,17 +35,20 @@ $theme-colors: (
 
 .btn-green
 {
-  @include button-variant(#0bb688, #0bb688, #0bb691, #444, #333, white);
+  @include button-variant(#0bb688, #0bb688, #02be96, #444, #333, white);
+  color:#fff;
 }
 
+.btn-light
+{
+  @include button-variant(#f8f9fa, #f8f9fa, #212529)
+  color: #212529;
+}
 
 
 /****************************************************************************
 *The Navbar
 ****************************************************************************/
-
-
-
 .top 
 {
   min-height: 80px;
@@ -59,6 +63,17 @@ $theme-colors: (
 {
   color: white;
 }
+
+.navbar-dark .navbar-nav .nav-link.btn.btn-light
+{
+  color:#212529;
+}
+
+.navbar-dark .navbar-nav .nav-link.btn.btn-light:hover
+{
+  color: white;
+}
+
 
 
 
@@ -82,10 +97,74 @@ $theme-colors: (
   transform: translate(0, -10%);
 }
 
-.carousel-item.t15 > img 
+
+.caption1
 {
-  transform: translate(0, -15%);
+  top: 28%;
+  text-align: center;
+  width: 65%;
 }
+.caption1 h1
+{
+  font-family: Arial;
+  background: rgba(8, 18, 9, 0.3);
+  font-size: 3vw;
+}
+
+.caption2
+{
+  top: 30%;
+  left: 60%;
+  text-align: left;
+  width: 34%;
+
+}
+
+.caption2 h1
+{
+  font-family: Impact;
+  font-size: 3.5vw;
+  background: rgba(188, 188, 247, 0.5);
+  color: rgb(7, 7, 8);
+  opacity: 0.7;
+  padding: 10px;
+}
+
+.caption3
+{
+  top: 2%;
+  left: 60%;
+  text-align: left;
+  width: 34%;
+
+}
+
+.caption3 h1
+{
+  font-style: italic;
+  font-size: 2.7vw;
+  background: rgba(231, 231, 240, 0.3);
+  color: #474747;
+  padding: 10px;
+}
+
+.caption4
+{
+  top: 30%;
+  left: 0%;
+  text-align: center;
+  width: 100%;
+
+}
+
+.caption4 h1
+{
+  font-size: 2.5vw;
+  font-family: Lato, Helvetica;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
 
 /******************************************************************************
 * Wrappers and containers
@@ -162,7 +241,7 @@ $theme-colors: (
   font-size: 0.9em;
 }
 
-.block-body > a
+.block-body a svg 
 {
   color: white;
 }

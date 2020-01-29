@@ -7,16 +7,30 @@
   .carousel-inner
     .carousel-item.t15.active
       = image_tag "flowers.jpg", class: 'd-block w-100'
-      .carousel-caption.text-left
-        %h1 This is the first caption
-        %p This is the blurb. with lots of lines I guess
+      .carousel-caption.caption1
+        %h1 ¿Quieres ayudar a mejorar el medio ambiente?
+       
     
     .carousel-item.t10
       =image_tag "lemur.jpg", class: 'd-block w-100'
-    .carousel-item.t15
+      .carousel-caption.caption2
+        %h1 En el Tlacuache, ayudamos a reutilizar lo que no te sirve
+    
+    .carousel-item.t10
       =image_tag "mountain.jpg", class: 'd-block w-100'
+      .carousel-caption.caption3
+        %h1 Lo que tú desechas le podría servir a alguien.
+
     .carousel-item
       =image_tag "mountainlake.jpeg", class: 'd-block w-100'
+      .carousel-caption.caption4
+        %h1 
+          Anúnciate con nosotros 
+          %br
+          para ver si lo que te estorba 
+          %br
+          podría serle útil a alguien más.
+
   %a.carousel-control-prev{"data-slide" => "prev", :href => "#mainslider", :role => "button"}
     %span.carousel-control-prev-icon{"aria-hidden" => "true"}
     %span.sr-only Previous

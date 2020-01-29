@@ -9,8 +9,7 @@
       .text-justify
         = @listing.description
       -if @listing.image.attached?
-        %p Foto:
-        =image_tag @listing.image, class: 'img-fluid'
+        =image_tag @listing.image, class: 'img-fluid mt-4'
 
 
 .text-center

@@ -1,9 +1,12 @@
 class PagesController < ApplicationController
 
-    layout 'nobanner'
+  layout 'nobanner', :only => [:home]
 
     def home
       @listings = Listing.all
+    end
+
+    def about
     end
 
 end
