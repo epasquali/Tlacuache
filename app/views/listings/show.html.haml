@@ -1,11 +1,17 @@
 .listing-wrapper
+
   .card.mt-3
     .card-header.bg-lightgrey.mb-0
       %h5.card-title.text-center
         = @listing.title
             
     .card-body
-      = @listing.description
+      .text-justify
+        = @listing.description
+      -if @listing.image.attached?
+        %p Foto:
+        =image_tag @listing.image, class: 'img-fluid'
+
 
 .text-center
   = link_to 'Editar', edit_listing_path(@listing)

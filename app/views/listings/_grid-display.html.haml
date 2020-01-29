@@ -1,0 +1,16 @@
+-@listings.in_groups_of(4, false).each do |group|
+  .row
+    -group.each do |listing|
+      .col-md-3
+        .card.mt-3.w-auto
+          =display_card_image(listing)
+          .card-body
+            %h5.card-title
+              =listing.title
+            %p.card-text.text-justify 
+              =listing.description 
+            %p.text-center.pt-2
+              =link_to "Ver Detalles", listing, class: "btn btn-primary"
+
+
+ 

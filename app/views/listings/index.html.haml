@@ -2,9 +2,10 @@
 
   %h1 Indice de Anuncios
 
-  %table.table
+  %table.table.text-left
     %thead
       %tr
+        %th Foto
         %th Title
         %th Description
         %th
@@ -14,6 +15,8 @@
     %tbody
       - @listings.each do |listing|
         %tr
+          %td
+            =display_image(listing)  
           %td= listing.title
           %td= listing.description
           %td= link_to 'Show', listing

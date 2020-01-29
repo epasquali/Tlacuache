@@ -13,6 +13,10 @@
   .form-group
     = f.label :description, 'Descripción:'
     = f.text_area :description, class: 'form-control'
+
+  .form-group
+    = f.label :image, 'Sube tu foto:'
+    = f.file_field :image, class: 'form-control-file'
   
   
   .form-group.text-center

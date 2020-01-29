@@ -1,0 +1,17 @@
+%table.table.text-left
+  %thead
+    %tr
+      %th 
+      %th 
+      %th 
+      %th
+
+  %tbody
+    - @listings.each do |listing|
+      %tr
+        %td
+          =display_image(listing)  
+        %td= listing.title
+        %td= listing.description
+        %td.text-center.w-25.align-middle
+          =link_to "Ver Detalles", listing, class: "btn btn-primary"
