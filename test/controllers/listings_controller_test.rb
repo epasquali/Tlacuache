@@ -3,7 +3,7 @@ require 'test_helper'
 class ListingsControllerTest < ActionDispatch::IntegrationTest
   
   setup do
-    @listing = listings(:one)
+    @listing = listings(:buy)
     @listing.description = "MyText"*10
   end
 

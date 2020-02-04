@@ -3,7 +3,9 @@ class ListingsController < ApplicationController
 
   # GET /listings
   def index
-    @listings = Listing.all
+    listingtype= listing_type.safe_constantize
+    #@listings = Listing.all
+    @listings = listingtype.all
   end
 
   # GET /listings/1
@@ -21,34 +23,52 @@ class ListingsController < ApplicationController
 
   # POST /listings
   def create
-    @listing = Listing.new(listing_params)
+    #@listing = Listing.new(listing_params)
 
-    respond_to do |format|
-      if @listing.save
-        format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
-      else
-        format.html { render :new }
-      end
+    #respond_to do |format|
+    #  if @listing.save
+    #    format.html { redirect_to @listing, notice: 'Listing was successfully created.' }
+    #  else
+    #    format.html { render :new }
+    #  end
+
+    listingtype = listing_params[:type].safe_constantize
+    @listing = listingtype.create(listing_params)
+
+    if @listing.valid?
+      flash[:success] = t 'listingcreated' 
+      redirect_to @listing.becomes(Listing)
+    else
+      flash.now[:alert] t 'listingnotcreated'
+      render 'listings/new'
     end
+
   end
 
   # PATCH/PUT /listings/1
   def update
-    respond_to do |format|
-      if @listing.update(listing_params)
-        format.html { redirect_to @listing, notice: 'Listing was successfully updated.' }
-      else
-        format.html { render :edit }
-      end
+    #respond_to do |format|
+    #  if @listing.update(listing_params)
+    #    format.html { redirect_to @listing, notice: 'Listing was successfully updated.' }
+    #  else
+    #    format.html { render :edit }
+    #  end
+    #end
+    
+    if @listing.update(listing_params)
+      flash[:success] = t 'listingupdated'
+      redirect to @listing.becomes(Listing)
+    else
+      flash.now[:alert] = t 'listingnotupdated'
+      render :edit
     end
+
   end
 
   # DELETE /listings/1
   def destroy
     @listing.destroy
-    respond_to do |format|
-      format.html { redirect_to listings_url, notice: 'Listing was successfully destroyed.' }
-    end
+    redirect_to listings_url, notice t 'listingdestroyed'
   end
 
   private
@@ -57,8 +77,12 @@ class ListingsController < ApplicationController
       @listing = Listing.find(params[:id])
     end
 
+    def listing_type
+      listing_type = Listing.listing_types.include?(params[:type]) ? : params[:type] : "Listing"
+    end
+
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:title, :description, :image)
+      params.require(listing_type.underscore.to_sym).permit(:title, :description, :type, :image)
     end
 end

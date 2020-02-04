@@ -1,0 +1,8 @@
+en:
+  listingcreated: "Listing successfully created."
+  listingnotcreated: "Your listing could not be created. 
+                      Please check your inputs and try again."
+  listingupdated: "Your listing has been updated."
+  listingnotupdated: "Your listing could not be updated.
+                      Please check your inputs and try again."
+  listingdestroyed: "Listing was successfully destroyed."

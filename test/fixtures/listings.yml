@@ -1,9 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyText
-  description: MyText
+buy:
+  type: 'Buy'
+  title: 'Listing One'
+  description: 'My description which is a reasonably long one after all.'
+  expires: 2025-01-15
 
-two:
-  title: MyText
-  description: MyText
+sell:
+  type: 'Sell'
+  title: 'Listing Two' 
+  description: "Listing 2's descriptin which is also a reasonably long one."
+  expires: 2025-01-15

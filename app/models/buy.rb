@@ -1,0 +1,2 @@
+class Buy < Listing
+end
