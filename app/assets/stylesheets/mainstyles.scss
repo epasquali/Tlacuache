@@ -270,3 +270,21 @@ $theme-colors: (
 {
   max-height: 195px;
 }
+
+/****************************************************************************
+*Index Nav Tab Pills
+****************************************************************************/
+.fixed-navpills
+{
+  margin-top: -69px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 6px;
+}
+
+.largerpill
+{
+  padding: 14px 24px;
+  margin-left: -4px;
+  border-right: 1px solid #eee;
+}

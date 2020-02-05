@@ -6,18 +6,28 @@
         - @listing.errors.full_messages.each do |message|
           %li= message
 
-  .form-group
-    = f.label :title, 'Título del anuncio:'
-    = f.text_field :title, class: 'form-control'
+  
+  .btn-group.d-flex.btn-group-toggle{"data-toggle" => "buttons"}
+    %label.btn.btn-light.btn-block.green.w-100.active
+      = f.radio_button :type, 'Sell', checked: "checked"
+      =t 'offering'
+    %label.btn.btn-light.red.w-100
+      = f.radio_button :type, 'Buy'
+      =t 'seeking'
 
-  .form-group
-    = f.label :description, 'Descripción:'
-    = f.text_area :description, class: 'form-control'
+  .card.card-body.greenbg
+    .form-group
+      = f.label :title, 'Título del anuncio:'
+      = f.text_field :title, class: 'form-control'
 
-  .form-group
-    = f.label :image, 'Sube tu foto:'
-    = f.file_field :image, class: 'form-control-file'
+    .form-group
+      = f.label :description, 'Descripción:'
+      = f.text_area :description, class: 'form-control'
+
+    .form-group
+      = f.label :image, 'Sube tu foto:'
+      = f.file_field :image, class: 'form-control-file'
   
   
-  .form-group.text-center
-    = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}
+    .form-group.text-center
+      = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}

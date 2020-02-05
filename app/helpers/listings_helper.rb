@@ -17,4 +17,5 @@ module ListingsHelper
         end  
     end
 
+
 end

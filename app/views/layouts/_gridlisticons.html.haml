@@ -1,0 +1,14 @@
+%ul.nav.nav-pills.justify-content-end.mb-3.fixed-navpills{:role => "tablist", :id=> "pills-tab_#{idno}"}
+    
+  %li.nav-item
+    %a.nav-link.active{"aria-controls" => "pills-list_2", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-list_#{idno}", :role => "tab", :id => "pills-list-tab_2"} 
+      %i.fa.fa-list
+  %li.nav-item
+    %a.nav-link{"aria-controls" => "pills-grid_#{idno}", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-grid_#{idno}", :role => "tab", :id => "pills-grid-tab_#{idno}"} 
+      %i.fa.fa-th
+
+.tab-content{:id => "pills-tabContent2"}
+  .tab-pane.fade.show.active{"aria-labelledby" => "pills-list-tab_#{idno}", :role => "tabpanel", :id => "pills-list_#{idno}"}
+    = render 'listings/list-display', filtercondition: filtercondition
+  .tab-pane.fade{"aria-labelledby" => "pills-grid-tab_#{idno}", :role => "tabpanel", :id => "pills-grid_#{idno}"}
+    = render 'listings/grid-display', filtercondition: filtercondition

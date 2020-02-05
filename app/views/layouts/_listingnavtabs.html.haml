@@ -1,0 +1,16 @@
+%ul#sbpills-tab.nav.nav-pills.justify-content-start.my-3.pl-1{:role => "tablist"}
+
+  %li.nav-item
+    %a#pills-sell-tab.nav-link.active.largerpill{"aria-controls" => "pills-sell", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-sell", :role => "tab"} 
+      Te Regalo
+  %li.nav-item
+    %a#pills-buy-tab.nav-link.largerpill{"aria-controls" => "pills-buy", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-buy", :role => "tab"} 
+      Busco
+
+#sbpills-tabContent.tab-content
+  #pills-sell.tab-pane.fade.show.active{"aria-labelledby" => "pills-sell-tab", :role => "tabpanel"}
+    = render 'layouts/gridlisticons', filtercondition: {type: "Sell"}, idno: '1'
+  #pills-buy.tab-pane.fade{"aria-labelledby" => "pills-buy-tab", :role => "tabpanel"}
+    = render 'layouts/gridlisticons', filtercondition: {type: "Buy"}, idno: '2'
+    
+

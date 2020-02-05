@@ -7,7 +7,7 @@
       %th
 
   %tbody
-    - @listings.each do |listing|
+    - @listings.where(filtercondition).each do |listing|
       %tr
         %td
           =display_image(listing)  

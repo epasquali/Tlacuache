@@ -1,29 +1,6 @@
-.listing-wrapper
+= render 'layouts/carousel'
 
-  %h1 Indice de Anuncios
+.container-fluid.px-5
 
-  %table.table.text-left
-    %thead
-      %tr
-        %th Foto
-        %th Title
-        %th Description
-        %th
-        %th
-        %th
+  = render 'layouts/listingnavtabs'
 
-    %tbody
-      - @listings.each do |listing|
-        %tr
-          %td
-            =display_image(listing)  
-          %td= listing.title
-          %td= listing.description
-          %td= link_to 'Show', listing
-          %td= link_to 'Edit', edit_listing_path(listing)
-          %td= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }
-
-%br
-
-.text-center
-  = link_to 'Crear un anuncio', new_listing_path

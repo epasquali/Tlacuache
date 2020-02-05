@@ -1,4 +1,4 @@
--@listings.in_groups_of(4, false).each do |group|
+-@listings.where(filtercondition).in_groups_of(4, false).each do |group|
   .row
     -group.each do |listing|
       .col-md-3

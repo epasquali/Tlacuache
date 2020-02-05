@@ -1,6 +1,8 @@
 class Listing < ApplicationRecord
   
   has_one_attached :image
+
+  before_validation :set_expirydate, on: :create
  
   validates :type, type_check: true
   validates :expires, expiration_date: true
@@ -11,5 +13,10 @@ class Listing < ApplicationRecord
     %w(Buy Sell)
   end
 
-end
+  protected
+    def set_expirydate
+      self.expires = Date.today() + 14.days
+    end
 
+end
+  
