@@ -1,0 +1,8 @@
+en:
+  javascriptdisabled: "Javascript is disabled!"
+  wehavedetected: "We have detected that you do not have JavaScript 
+                  enabled on your browser. Our site requires JavaScript for 
+                  proper functionality. Please follow these"
+  instructions: "instructions"
+  toenablejs: "to enable JavaScript on your browser."
+  ok: "Ok"

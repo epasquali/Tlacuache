@@ -4,7 +4,7 @@ $theme-colors: (
 );
 
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
 
 
 
@@ -44,6 +44,26 @@ $theme-colors: (
   @include button-variant(#f8f9fa, #f8f9fa, #212529)
   color: #212529;
 }
+
+
+
+/*.btn.sellbtn.w-100.active
+{
+  font-weight: bold;
+  color: #ffffff;
+  background-color:#009edc;
+  box-shadow: none;
+}
+
+.btn.buybtn.w-100.active
+{
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e95e1e;
+  box-shadow: none;
+}
+*/
+
 
 
 /****************************************************************************
@@ -213,9 +233,18 @@ $theme-colors: (
   margin-top: 1px;
   background-image: url('titlebanner.jpeg');
   background-size: cover;
-  background-position: 0%, -15%;
+  background-position: 0% 51%;
   height: 150px;
-  
+}
+
+.bannerheading
+{
+  color: #fff;
+  font-size: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  //background: rgba(8, 18, 9, 0.3);
 }
 
 
@@ -287,4 +316,7 @@ $theme-colors: (
   padding: 14px 24px;
   margin-left: -4px;
   border-right: 1px solid #eee;
+  /*font-family: Montserrat;
+  font-size: 18px;*/
+  
 }

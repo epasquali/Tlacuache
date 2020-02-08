@@ -1,31 +1,27 @@
+= content_for :title, (t 'aboutus')
 .page-wrapper
 
   %p.pb-2 
-    El Tlacuache es una comunidad de anuncios de intercambio gratis. Lo que tu 
-    desechas a alguien le puede servir. Pongamos nuestro granito de arena para 
-    proteger al medio ambiente: reduce, recicla, reutiliza.
+    =t'aboutp1'
 
   %p.pb-2
-    =link_to "Anúnciate aquí", new_listing_path
-    si tienes algo que no te sirve y que quieres regalar. 
-    =link_to "Checa aquí", root_path 
-    los anuncios por si alguien quiere deshacerse de algo que te pueda servir.
+    =link_to (t 'advertisehere'), new_listing_path
+    =t 'ifyouhavesomething' 
+    =link_to (t 'checkhere'), root_path 
+    =t 'incasesomething'
 
   %p
-    Reglas:
+    =t 'rules'
 
   %ol
 
     %li.pb-2
-      Lo que desechas lo tienes que donar GRATIS.
+      =t 'rule1'
 
     %li.pb-2
-      Lo que desechas tiene que estar en orden: no cosas rotas, sucias, o 
-      descompuestas.
+      =t 'rule2'
 
     %li
-      Si te apuntas para recibir algo tu tienes que arreglar como recogerlo 
-      individualmente con el donador. Tu estás a cargo del transporte y costos de 
-      envío. Procura hacer la donación lo mas fácil posible para el donante.
+      =t 'rule3'
       
 

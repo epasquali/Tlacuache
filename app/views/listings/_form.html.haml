@@ -1,21 +1,26 @@
 = form_for @listing do |f|
   - if @listing.errors.any?
     #error_explanation
-      %h2= "#{pluralize(@listing.errors.count, "error")} prohibited this listing from being saved:"
+      %h5= "#{pluralize(@listing.errors.count, "error")} prohibited this listing from being saved:"
       %ul
         - @listing.errors.full_messages.each do |message|
           %li= message
 
-  
-  .btn-group.d-flex.btn-group-toggle{"data-toggle" => "buttons"}
-    %label.btn.btn-light.btn-block.green.w-100.active
-      = f.radio_button :type, 'Sell', checked: "checked"
-      =t 'offering'
-    %label.btn.btn-light.red.w-100
-      = f.radio_button :type, 'Buy'
-      =t 'seeking'
 
-  .card.card-body.greenbg
+  .card.card-body
+    .row.mb-5
+      .col-4.pt-2
+        Selecciona el tipo de anuncio:
+      .col-8
+        .btn-group.d-flex.btn-group-toggle.w-100{"data-toggle" => "buttons"}
+          %label.btn.btn-block.btn-outline-primary.w-100.active
+            = f.radio_button :type, 'Sell', checked: "checked"
+            =t 'offering'
+          %label.btn.btn-outline-orange.w-100
+            = f.radio_button :type, 'Buy'
+            =t 'seeking'
+
+  
     .form-group
       = f.label :title, 'Título del anuncio:'
       = f.text_field :title, class: 'form-control'
@@ -31,3 +36,5 @@
   
     .form-group.text-center
       = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}
+
+

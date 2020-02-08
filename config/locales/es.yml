@@ -1,0 +1,8 @@
+es:
+  javascriptdisabled: "¡Javascript está desactivada!"
+  wehavedetected: "Hemos detectado que JavaScript no está activada en tu navegador.
+                   Nuestro sitio requiere JavasScript para funcionar correctamente.
+                   Por favor sigue las siguientes"
+  instructions: "instrucciones"
+  toenablejs: "para activar JavaScript en tu navegador."
+  ok: "Ok"

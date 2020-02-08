@@ -2,10 +2,8 @@ es:
   offering: "Te regalo"
   seeking: "Busco"
   
-  listingcreated: "Listing successfully created."
-  listingnotcreated: "Your listing could not be created. 
-                      Please check your inputs and try again."
-  listingupdated: "Your listing has been updated."
-  listingnotupdated: "Your listing could not be updated.
-                      Please check your inputs and try again."
-  listingdestroyed: "Listing was successfully destroyed."
+  listingcreated: "Tu anuncio fue creado exitosamente."
+  listingnotcreated: "Tu anuncio no pudo ser creado. Por favor revisa tus datos e inténtalo de nuevo."
+  listingupdated: "Tu anuncio ha sido actualizado."
+  listingnotupdated: "Tu anuncio no pudo ser actualizado. Por favor revisa tus datos e inténtalo de nuevo."
+  listingdestroyed: "El anuncio ha sido destruido."

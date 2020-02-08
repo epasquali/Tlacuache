@@ -1,6 +1,7 @@
-.form-wrapper
+= content_for :title, "Crear un anuncio"
+.form-wrapper.w-75
 
-  %h3.text-center Crear un anuncio
+  %h3.text-center.mb-5 Publica tu anuncio
 
   = render 'form', buttoncaption: 'Publica mi anuncio', debouncecaption: 'Publicando...'
 
