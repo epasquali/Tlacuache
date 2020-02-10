@@ -8,35 +8,34 @@
     .carousel-item.t15.active
       = image_tag "flowers.jpg", class: 'd-block w-100'
       .carousel-caption.caption1
-        %h1 ¿Quieres ayudar a mejorar el medio ambiente?
+        %h1 
+          =t 'carousel.wanttohelp'
        
     
     .carousel-item.t10
       =image_tag "lemur.jpg", class: 'd-block w-100'
       .carousel-caption.caption2
-        %h1 En el Tlacuache, ayudamos a reutilizar lo que no te sirve
+        %h1 
+          =t 'carousel.wehelpreuse'
     
     .carousel-item.t10
       =image_tag "mountain.jpg", class: 'd-block w-100'
       .carousel-caption.caption3
-        %h1 Lo que tú desechas le podría servir a alguien.
+        %h1 
+          =t 'carousel.yourjunkisuseful'
 
     .carousel-item
       =image_tag "mountainlake.jpeg", class: 'd-block w-100'
       .carousel-caption.caption4
         %h1 
-          Anúnciate con nosotros 
-          %br
-          para ver si lo que te estorba 
-          %br
-          podría serle útil a alguien más.
+          =t 'carousel.advertisewithus_html'
 
   %a.carousel-control-prev{"data-slide" => "prev", :href => "#mainslider", :role => "button"}
     %span.carousel-control-prev-icon{"aria-hidden" => "true"}
-    %span.sr-only Previous
+    %span.sr-only =t 'previous'
   %a.carousel-control-next{"data-slide" => "next", :href => "#mainslider", :role => "button"}
     %span.carousel-control-next-icon{"aria-hidden" => "true"}
-    %span.sr-only Next
+    %span.sr-only =t 'next'
 
 :javascript
   $(document).ready(function(){

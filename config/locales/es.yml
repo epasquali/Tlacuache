@@ -1,4 +1,5 @@
 es:
+  lname: "Español"
   javascriptdisabled: "¡Javascript está desactivada!"
   wehavedetected: "Hemos detectado que JavaScript no está activada en tu navegador.
                    Nuestro sitio requiere JavasScript para funcionar correctamente.

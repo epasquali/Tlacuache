@@ -1,9 +1,47 @@
 es:
   offering: "Te regalo"
   seeking: "Busco"
-  
+
+  carousel:
+    wanttohelp: "¿Quieres ayudar a mejorar el medio ambiente?"
+    wehelpreuse: "En el Tlacuache, ayudamos a reutilizar lo que no te sirve."
+    yourjunkisuseful: "Lo que tú desechas le podría servir a alguien."
+    advertisewithus_html: "Anúnciate con nosotros </br> para ver si lo que te 
+                           estorba </br> podría serle útil a alguien más."
   listingcreated: "Tu anuncio fue creado exitosamente."
   listingnotcreated: "Tu anuncio no pudo ser creado. Por favor revisa tus datos e inténtalo de nuevo."
   listingupdated: "Tu anuncio ha sido actualizado."
   listingnotupdated: "Tu anuncio no pudo ser actualizado. Por favor revisa tus datos e inténtalo de nuevo."
   listingdestroyed: "El anuncio ha sido destruido."
+
+  previous: "Anterior"
+  next: "Siguiente"
+
+  navlinks:
+    loginregister: "REGÍSTRATE | INGRESA"
+    advertisehere: "¡ANÚNCIATE AQUÍ!"
+
+  viewdetails: "Ver detalles..."
+
+  createad: "Crear un anuncio"
+  publishad: "Publica tu anuncio"
+  publishmyad: "Publica mi anuncio"
+  publishing: "Publicando..."
+  selecttype: "Selecciona el tipo de anuncio:"
+  title: "Título del anuncio:"
+  description: "Descripción:"
+  uploadphoto: "Sube tu foto:"
+  back: "Regresar"
+
+  error: "error"
+  prohibitedlisting: 
+    one: "prohibió crear éste anuncio:"
+    other: "prohibieron crear éste anuncio:"
+
+  edit: "Editar"
+  editlisting: "Editar anuncio"
+  update: "Actualizar"
+  updating: "Actualizando..."
+  show: "Mostrar"
+  showlisting: "Detalles del anuncio"
+

@@ -1,0 +1,6 @@
+es:
+  activerecord:
+    attributes:
+      listing:
+        title: "Título"
+        description: "Descripción"

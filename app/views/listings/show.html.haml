@@ -1,3 +1,5 @@
+=content_for :title, (t 'showlisting')
+
 .listing-wrapper
 
   .card.mt-3
@@ -13,6 +15,6 @@
 
 
 .text-center
-  = link_to 'Editar', edit_listing_path(@listing)
+  = link_to (t 'edit'), edit_listing_path(@listing)
   \|
-  = link_to 'Regresar', listings_path
+  = link_to (t 'back'), listings_path

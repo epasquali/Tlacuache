@@ -1,7 +1,14 @@
 en:
   offering: "I'm offering"
   seeking: "I'm seeking"
-  
+
+  carousel:
+    wanttohelp: "Do you want to help improve our environment?"
+    wehelpreuse: "At El Tlacuache, we help reuse what you no longer need."
+    yourjunkisuseful: "What you are throwing away could be useful."
+    advertisewithus_html: "Advertise with us to see if </br> what you want to 
+                           get rid of </br> could be useful to someone else."
+
   listingcreated: "Listing successfully created."
   listingnotcreated: "Your listing could not be created. 
                       Please check your inputs and try again."
@@ -9,3 +16,31 @@ en:
   listingnotupdated: "Your listing could not be updated.
                       Please check your inputs and try again."
   listingdestroyed: "Listing was successfully destroyed."
+
+  previous: "Previous"
+  next: "Next"
+
+  navlinks:
+    loginregister: "LOG IN | REGISTER"
+    advertisehere: "PLACE YOUR AD HERE!"
+
+  viewdetails: "View Details"
+
+  createad: "Create Listing"
+  publishad: "Publish a Listing"
+  publishmyad: "Publish my Listing"
+  publishing: "Publishing..."
+  selecttype: "Select the type of listing:"
+  title: "Title:"
+  description: "Description:"
+  uploadphoto: "Upload your photo:"
+  back: "Back"
+
+  prohibitedlisting: "prohibited this listing from being saved:"
+
+  edit: "Edit"
+  editlisting: "Edit listing"
+  update: "Update"
+  updating: "Updating..."
+  show: "Show"
+  showlisting: "Listing details"

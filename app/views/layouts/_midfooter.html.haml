@@ -4,12 +4,12 @@
       .col-md-4.midfooterblock
      
         %h5.block-title
-          Buscador...
+          =t 'searcher'
         %p.block-body
           Here goes something
 
         %h5.block-title.mt-5.mb-3
-          ¡Síguenos en las redes sociales!
+          =t 'followus'
         %p.block-body
           =link_to '<i class = "fab fa-facebook fa-2x mr-3"></i>'.html_safe, GENERALCFG['socialmedia']['facebook']
           =link_to '<i class = "fab fa-twitter fa-2x mr-3"></i>'.html_safe, GENERALCFG['socialmedia']['twitter']
@@ -17,17 +17,14 @@
       
       .col-md-4.midfooterblock
         %h5.block-title
-          No lo tires. ¡Dónalo!
+          =t 'dontthrowit'
         %p.block-body
-          Quieres hacer algo para mejorar el medio ambiente y ayudar a alguien más?
-          Seguramente has oido hablar de las tres “erres”: Reduce, Recicla, y Reutiliza.
-          En El Tlacuache, ayudamos a reutilizar lo que no te sirve. Lo que tu desechas 
-          le podría servir a alguien. 
-          =link_to "Anúnciate aquí", new_listing_path
-          a ver si lo que te estorba podría serle útil a alguien más.
+          =t 'wanttohelp'
+          =link_to (t 'advertisehere'), new_listing_path
+          =t 'toseeif'
        
       .col-md-4.midfooterblock
         %h5.block-title
-          Nuestros últimos Tweets:
+          =t 'latesttweets'
         %p.block-body
           <a class="twitter-timeline" data-width="400" data-dnt="true" data-height="300" data-theme="dark" href="https://twitter.com/TlacuacheOrg?ref_src=twsrc%5Etfw">Tweets by TlacuacheOrg</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

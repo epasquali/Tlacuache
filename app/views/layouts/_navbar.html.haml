@@ -11,9 +11,11 @@
         = yield :navlinks
 
 
-        -#%li.nav-item.dropdown.ldropdown
-        -#  %a#langdropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"}
-        -#    =t 'lname' 
-        -#  .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "langdropdown"}
-        -#    - I18n.available_locales.without(I18n.locale).each do |x|
-        -#      =link_to t('lname', locale: x), {locale: x}, {class: 'dropdown-item ldropdown'}
+        
+        
+        %li.nav-item.dropdown.ldropdown
+          %a#langdropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#"}
+            =t 'lname' 
+          .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "langdropdown"}
+            - I18n.available_locales.without(I18n.locale).each do |x|
+              =link_to t('lname', locale: x), {locale: x}, {class: 'dropdown-item ldropdown'}

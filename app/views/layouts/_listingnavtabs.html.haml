@@ -2,10 +2,10 @@
 
   %li.nav-item
     %a#pills-sell-tab.nav-link.active.largerpill{"aria-controls" => "pills-sell", "aria-selected" => "true", "data-toggle" => "pill", :href => "#pills-sell", :role => "tab"} 
-      Te Regalo
+      =t 'offering'
   %li.nav-item
     %a#pills-buy-tab.nav-link.largerpill{"aria-controls" => "pills-buy", "aria-selected" => "false", "data-toggle" => "pill", :href => "#pills-buy", :role => "tab"} 
-      Busco
+      =t 'seeking'
 
 #sbpills-tabContent.tab-content
   #pills-sell.tab-pane.fade.show.active{"aria-labelledby" => "pills-sell-tab", :role => "tabpanel"}

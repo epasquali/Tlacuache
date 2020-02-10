@@ -1,16 +1,21 @@
 = form_for @listing do |f|
   - if @listing.errors.any?
     #error_explanation
-      %h5= "#{pluralize(@listing.errors.count, "error")} prohibited this listing from being saved:"
+      %h5
+        = pluralize(@listing.errors.count, (t 'error'), locale: I18n.locale) + " " + t('prohibitedlisting', count: @listing.errors.count)
       %ul
         - @listing.errors.full_messages.each do |message|
           %li= message
 
 
   .card.card-body
+
+
+      
+    
     .row.mb-5
-      .col-4.pt-2
-        Selecciona el tipo de anuncio:
+      .col-4.col-form-label
+        =t 'selecttype'
       .col-8
         .btn-group.d-flex.btn-group-toggle.w-100{"data-toggle" => "buttons"}
           %label.btn.btn-block.btn-outline-primary.w-100.active
@@ -22,15 +27,15 @@
 
   
     .form-group
-      = f.label :title, 'Título del anuncio:'
+      = f.label :title, (t 'title')
       = f.text_field :title, class: 'form-control'
 
     .form-group
-      = f.label :description, 'Descripción:'
+      = f.label :description, (t 'description')
       = f.text_area :description, class: 'form-control'
 
     .form-group
-      = f.label :image, 'Sube tu foto:'
+      = f.label :image, (t 'uploadphoto')
       = f.file_field :image, class: 'form-control-file'
   
   

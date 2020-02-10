@@ -1,9 +1,10 @@
-= content_for :title, "Crear un anuncio"
+= content_for :title, (t 'createad')
 .form-wrapper.w-75
 
-  %h3.text-center.mb-5 Publica tu anuncio
+  %h3.text-center.mb-5 
+    =t 'publishad'
 
-  = render 'form', buttoncaption: 'Publica mi anuncio', debouncecaption: 'Publicando...'
+  = render 'form', buttoncaption: (t 'publishmyad'), debouncecaption: (t 'publishing')
 
 .text-center
-  = link_to 'Regresar', listings_path
+  = link_to (t 'back'), listings_path

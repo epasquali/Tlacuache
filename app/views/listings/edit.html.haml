@@ -1,10 +1,11 @@
-=content_for :title, "Editar anuncio"
+=content_for :title, (t 'editlisting')
 .form-wrapper.w-75
-  %h3.text-center.mb-5 Editar anuncio
+  %h3.text-center.mb-5 
+    =t ('editlisting')
 
-  = render 'form', buttoncaption: 'Actualizar', debouncecaption: 'Actualizando...'
+  = render 'form', buttoncaption: (t 'update'), debouncecaption: (t 'updating')
 
 .text-center
-  = link_to 'Mostrar', @listing
+  = link_to (t 'show'), @listing
   \|
-  = link_to 'Regresar', listings_path
+  = link_to (t 'back'), listings_path
