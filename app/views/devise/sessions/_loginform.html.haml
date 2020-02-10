@@ -8,7 +8,12 @@
       = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
     .form-group
       = f.label :password, (t 'password')
-      = f.password_field :password, autocomplete: "current-password", class: "form-control"
+      .input-group
+        = f.password_field :password, autocomplete: "current-password", class: "form-control", id: "pwd"
+        .input-group-append
+          %span.input-group-text
+            %i.fa.fa-eye{:onclick => "togglepwdeye();"}
+      
       .small
         = link_to (t 'forgotpassword'), new_password_path(resource_name)
     
