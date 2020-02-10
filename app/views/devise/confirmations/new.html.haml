@@ -1,0 +1,14 @@
+.container-fluid
+  .form-wrapper.pb-2
+    %h5.box-title.text-center.pb-3 
+      =t 'sendacctactivationlink'
+    = form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: { method: :post }) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .form-group
+        = f.label :email, (t 'youremail')
+        = f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), class: "form-control"
+      
+      .form-group.text-center
+        = f.button (t 'sendlink'), class: 'btn btn-success'
+  
+

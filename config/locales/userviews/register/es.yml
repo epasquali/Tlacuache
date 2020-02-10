@@ -1,0 +1,13 @@
+es:
+  createnewuser: "Crear una nueva cuenta de usuario"
+  yourname: "Tu nombre:"
+  firstname: "Nombre"
+  lastname: "Apellido"
+  register: "Crear cuenta"
+  onemoment: "Un momento..."
+  chooseloginpwd: "Escoge una contraseña:"
+  sixcharacters: "Tu contraseña debe contener al menos 6 letras, números, y/o símbolos"
+  pleasecheck: "Por favor verifica:"
+  readprivacypolicy: "He leído y acepto la %{privacypolicy} y los %{termsandconditions} de los servicios y software de Arcadia Blockchain Technologies."
+  privacypolicy: "política de privacidad"
+  termsandconditions: "términos y condiciones"

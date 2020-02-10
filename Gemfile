@@ -34,7 +34,7 @@ gem 'font-awesome-rails'
 gem 'haml'
 
 gem 'rails-i18n'
-
+gem 'devise'
 
 
 # Reduces boot times through caching; required in config/boot.rb

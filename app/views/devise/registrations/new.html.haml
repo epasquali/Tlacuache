@@ -1,0 +1,6 @@
+.container-fluid
+  .form-wrapper.pb-2.mb-5
+    =render 'devise/registrations/form', titleheading: (t 'createnewuser'), buttoncaption: (t 'register'), debouncecaption: (t 'onemoment'), passwordcaption: (t 'chooseloginpwd'), tooltip: (t 'sixcharacters')
+
+    
+    = render "devise/shared/links"

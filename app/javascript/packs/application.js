@@ -12,6 +12,7 @@ import $ from 'jquery';
 import 'bootstrap/dist/js/bootstrap';
 import "@fortawesome/fontawesome-free/js/all";
 import "@fortawesome/fontawesome-free/css/all.css"
+import "./custom.js"
 
 $(document).on('turbolinks:load', function() {
   $('body').tooltip({

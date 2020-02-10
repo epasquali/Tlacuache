@@ -1,0 +1,13 @@
+en:
+  createnewuser: "Create a New User Account"
+  yourname: "Your Name:"
+  firstname: "First Name"
+  lastname: "Last Name"
+  register: "Register"
+  onemoment: "One moment..."
+  chooseloginpwd: "Choose a login password:"
+  sixcharacters: "Your login password must be at least 6 characters long"
+  pleasecheck: "Please check:"
+  readprivacypolicy: "I have read the %{privacypolicy} and %{termsandconditions} for Arcadia Blockchain Technologies' Software and Services."
+  privacypolicy: "Privacy Policy"
+  termsandconditions: "Terms and Conditions"

@@ -1,0 +1,9 @@
+es:
+  login: "Iniciar sesión"
+  youremail: "Tu dirección de correo electrónico:"
+  password: "Contraseña:"
+  forgotpassword: "Se me olvidó mi contraseña."
+  newuser: "¿Todavía no tienes cuenta?"
+  registerforaccount: "¡Regístrate aquí!"
+  sendacctactivationlink: "Enviar enlace de activación de cuenta"
+  sendlink: "Enviar enlace"

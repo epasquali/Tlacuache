@@ -327,3 +327,23 @@ $theme-colors: (
   font-size: 18px;*/
   
 }
+
+
+/*******************************************************************************
+* Miscellaneous
+********************************************************************************/@at-root
+.field_with_errors
+{
+  display:inline;
+  width:calc(100% - 30px;);
+  input 
+  {
+    border:1px solid var(--danger);
+  }
+}
+
+.alert
+{
+  margin-bottom: 0px;
+  margin-top: 1px;
+}

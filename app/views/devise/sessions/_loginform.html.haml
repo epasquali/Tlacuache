@@ -1,0 +1,24 @@
+.form-wrapper.pb-2.mb-5
+  %h5.box-title.text-center.pb-3  
+    =t 'login'
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  
+    .form-group
+      = f.label :email, (t 'youremail')
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
+    .form-group
+      = f.label :password, (t 'password')
+      = f.password_field :password, autocomplete: "current-password", class: "form-control"
+      .small
+        = link_to (t 'forgotpassword'), new_password_path(resource_name)
+    
+    - if devise_mapping.rememberable?
+      .field
+        = f.check_box :remember_me
+        = f.label :remember_me
+
+    .form-group.text-center
+      = f.button buttoncaption, class: 'btn btn-success'
+    
+    
+  = render "devise/shared/links"

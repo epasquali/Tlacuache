@@ -1,0 +1,9 @@
+en:
+  login: "Log In"
+  youremail: "Your email address:"
+  password: "Password:"
+  forgotpassword: "I forgot my password."
+  newuser: "New user?"
+  registerforaccount: "Register for an account!"
+  sendacctactivationlink: "Send account activation link"
+  sendlink: "Send link"

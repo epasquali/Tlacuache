@@ -1,0 +1,17 @@
+.container-fluid
+  .form-wrapper.pb-2
+    %h5.box-title.text-center.pb-3 
+      =t 'forgotpasswordsad'
+
+    = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .form-group
+        = f.label :email, (t 'youremail')
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control"
+  
+      .form-group.text-center
+        = f.button (t 'passwordreset'), class: 'btn btn-success'
+  
+
+
+
