@@ -4,6 +4,9 @@ es:
       not_found: 'no encontrado'
       already_confirmed: 'ya ha sido confirmada'
       not_locked: 'no está bloqueada'
+      not_saved:
+        one: "1 error prohibió registrar a éste %{resource}:"
+        other: "%{count} errores prohibieron registrar a éste %{resource}:"
 
   devise:
     failure:

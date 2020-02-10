@@ -1,6 +1,10 @@
 es:
   activerecord:
+    models:
+      user: usuario
     attributes:
+      user:
+        email: "Correo electrónico"
       listing:
         title: "Título"
         description: "Descripción"
