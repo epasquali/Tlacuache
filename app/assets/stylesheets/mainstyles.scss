@@ -32,6 +32,10 @@ $theme-colors: (
   background-color:  #dbdada;
 }
 
+.bg-blue
+{
+  background-color: rgba(21, 5, 253, 0.667)
+}
 
 .btn-green
 {
@@ -46,23 +50,6 @@ $theme-colors: (
 }
 
 
-
-/*.btn.sellbtn.w-100.active
-{
-  font-weight: bold;
-  color: #ffffff;
-  background-color:#009edc;
-  box-shadow: none;
-}
-
-.btn.buybtn.w-100.active
-{
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #e95e1e;
-  box-shadow: none;
-}
-*/
 
 
 
@@ -346,4 +333,11 @@ $theme-colors: (
 {
   margin-bottom: 0px;
   margin-top: 1px;
+}
+
+.profileheader
+{
+  padding:0px;
+  margin: 0px;
+  text-color: white;
 }

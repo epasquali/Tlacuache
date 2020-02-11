@@ -12,4 +12,9 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  Rails.application.configure do 
+    routes.default_url_options[:locale] = :en
+  end
+
 end
