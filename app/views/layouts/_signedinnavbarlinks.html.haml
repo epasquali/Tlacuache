@@ -1,0 +1,6 @@
+%li.nav-item.pr-3
+  =link_to (t 'navlinks.myprofile'), user_path(current_user), class: "nav-link"
+%li.nav-item.pr-2
+  = link_to "<i class = \"fa fa-plus-circle mr-2\"></i>#{t 'navlinks.advertisehere'}".html_safe, new_listing_path, class: 'nav-link btn btn-green'
+%li.nav-item
+  = link_to (t 'navlinks.logout'), destroy_user_session_path, method: :delete, class: "nav-link"

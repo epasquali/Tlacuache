@@ -4,7 +4,7 @@ class ExpirationDateValidator < ActiveModel::EachValidator
       record.errors.add(attribute, " date/time cannot be in the past.")
     end
     
-    if !value.present?
+    if !value.present? || value.nil?
       record.errors.add(attribute, ' cannot be empty.')  
     end
    

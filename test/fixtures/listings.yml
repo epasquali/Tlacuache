@@ -3,11 +3,35 @@
 buy:
   type: 'Buy'
   title: 'Listing One'
-  description: 'My description which is a reasonably long one after all.'
+  description: 'My description which is a reasonably long one after all, not kidding.'
   expires: 2025-01-15
+  created_at: <%=Time.now()=>
 
 sell:
   type: 'Sell'
   title: 'Listing Two' 
   description: "Listing 2's descriptin which is also a reasonably long one."
   expires: 2025-01-15
+  created_at: <%=Time.now()=>
+
+
+bike:
+  type: 'Sell'
+  title: 'Selling a bike'
+  description: 'Selling a bike for everyone who wants one'
+  user: ben
+  created_at: <%=10.minutes.ago%>
+
+orange:
+  type: 'Sell'
+  title: 'Selling an orange'
+  description: 'Selling an orange for everyone who wants one'
+  user: ben
+  created_at: <%=2.weeks.ago%>
+
+car:
+  type: 'Sell'
+  title: 'Selling a cool car'
+  description: 'Selling an awesome toy car to anyone who wants one'
+  user: ben
+  created_at: <=3.years.ago%>

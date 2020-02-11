@@ -23,6 +23,8 @@ en:
   navlinks:
     loginregister: "LOG IN | REGISTER"
     advertisehere: "PLACE YOUR AD HERE!"
+    myprofile: "My Profile"
+    logout: "Log out"
 
   viewdetails: "View Details"
 

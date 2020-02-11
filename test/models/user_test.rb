@@ -29,4 +29,14 @@ class UserTest < ActiveSupport::TestCase
     assert_not @user.valid?
   end
 
+  test "user delete should destroy all user listings" do
+    @user.save
+    @user.listings.create!(title: "Test Listing", description: "Description here"*5, 
+                           type: "Sell", expires: Date.today() + 14.days)
+    assert_difference 'Listing.count', -1 do
+      @user.destroy
+    end
+  end
+
+
 end

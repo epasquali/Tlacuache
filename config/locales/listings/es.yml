@@ -20,6 +20,8 @@ es:
   navlinks:
     loginregister: "REGÍSTRATE | INGRESA"
     advertisehere: "¡ANÚNCIATE AQUÍ!"
+    myprofile: "Mi Perfil"
+    logout: "Cerrar sesión"
 
   viewdetails: "Ver detalles..."
 

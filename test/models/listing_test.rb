@@ -4,9 +4,15 @@ class ListingTest < ActiveSupport::TestCase
  
 
   setup do
+    @user = users(:one)
     @buylisting = listings(:buy)
     @selllisting = listings(:sell)
+    @buylisting.user_id = @user.id
+    @selllisting.user_id = @user.id
+    #@buylisting = @user.listings.create(title: "Buy title", description: "Buy description"*5, type: "Buy")
+    #@selllisting = @user.listings.build(title: "Sell title", description: "Sell description"*5, type: "Sell")
   end
+
 
   test 'listing should be valid' do
     assert @buylisting.valid?
@@ -18,6 +24,11 @@ class ListingTest < ActiveSupport::TestCase
 
   test 'sell listing is valid' do
     assert @selllisting.valid?
+  end
+
+  test 'user id should be present' do
+    @buylisting.user_id = nil
+    assert_not @buylisting.valid?
   end
 
   test 'type should be present' do
@@ -65,6 +76,9 @@ class ListingTest < ActiveSupport::TestCase
     assert_not @buylisting.valid?
   end
 
+  #test "order should be most recent first" do
+  #  assert_equal listing(:most_recent), Listing.first
+  #end
 
 
 end

@@ -47,8 +47,14 @@
             %h5.card-title.text-center.text-white.mb-0
               = t 'mystats'
             
-          .card-body
-            todavia no tienes ningun anuncio
+          .card-body.pt-5
+            %i.fa.fa-check-circle.text-success.ml-3.mr-2
+            =@user.listings.count
+            = t 'activelistings'
+            %br
+            %br
+            %br
+            %br
             %br
 
             .text-center.mt-5

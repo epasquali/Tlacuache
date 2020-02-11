@@ -1,6 +1,10 @@
 class ListingsController < ApplicationController
-  before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  
+  include ListingsHelper
 
+  before_action :set_listing, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  before_action :owned_by, only: [:edit, :update, :destroy]
 
   layout 'nobanner', :only => [:index]
 
@@ -25,18 +29,16 @@ class ListingsController < ApplicationController
 
 
   def create
+  
+    @listing = current_user.listings.build(listing_params)
 
-    listingtype = listing_params[:type].safe_constantize
-    @listing = listingtype.create(listing_params)
-
-    if @listing.valid?
-      flash[:success] = t 'listingcreated' 
-      redirect_to @listing.becomes(Listing)
+    if @listing.save
+      flash[:success] = t 'listingcreated'
+      redirect_to @listing
     else
-      flash.now[:alert] = t 'listingnotcreated'
+      flash.now[:alert] =t 'listingnotcreated'
       render 'listings/new'
     end
-
   end
 
   def update  
@@ -67,6 +69,11 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(listing_type.underscore.to_sym).permit(:type, :title, :description, :image)
+      params.require(listing_type.underscore.to_sym).permit(:type, :title, :description, :image, :user_id)
+    end
+
+    def owned_by
+      #redirect_to(user_path(current_user)) unless ( (current_user.id == @listing.user_id) || current_user.admin)
+      redirect_to(user_path(current_user)) unless (current_user.id == @listing.user_id)
     end
 end

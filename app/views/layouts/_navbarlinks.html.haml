@@ -1,12 +1,10 @@
 = content_for :navlinks do
-  %li.nav-item.pr-2
-    = link_to (t 'aboutus'), about_path, class: 'nav-link'
-  %li.nav-item.pr-2
-    = link_to "<i class = \"fa fa-plus-circle mr-2\"></i>#{t 'navlinks.advertisehere'}".html_safe, new_listing_path, class: 'nav-link btn btn-green'
-  
   - if user_signed_in?
-    %li.nav-item.pr-2
-      = link_to (t 'navlinks.logout'), destroy_user_session_path, method: :delete, class: "nav-link"
+    = render 'layouts/signedinnavbarlinks'
   - else
+    %li.nav-item.pr-2
+      = link_to (t 'aboutus'), about_path, class: 'nav-link'
+    %li.nav-item.pr-2
+      = link_to "<i class = \"fa fa-plus-circle mr-2\"></i>#{t 'navlinks.advertisehere'}".html_safe, new_listing_path, class: 'nav-link btn btn-green'
     %li.nav-item.pl-2
       = link_to (t 'navlinks.loginregister'), new_user_session_path, class: 'nav-link btn btn-light'

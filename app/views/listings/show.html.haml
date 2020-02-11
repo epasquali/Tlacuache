@@ -15,6 +15,7 @@
 
 
 .text-center
-  = link_to (t 'edit'), edit_listing_path(@listing)
-  \|
+  -if @listing.owned_by?(current_user)
+    = link_to (t 'edit'), edit_listing_path(@listing)
+    \|
   = link_to (t 'back'), listings_path

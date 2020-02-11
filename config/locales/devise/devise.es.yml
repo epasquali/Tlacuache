@@ -28,7 +28,9 @@ es:
       confirmed: 'Tu cuenta ha sido confirmada. Ya has accedido a tu cuenta.'
     registrations:
       signed_up: 'Te has registrado correctamente. Si está disponible, te habremos enviado un email de confirmación.'
-      updated: 'Has actualizado tu cuenta correctamente.'
+      signed_up_but_unconfirmed: "Un correo con un enlace de confirmación ha sido enviado a tu dirección email. Por favor
+                                  haz click en el enlace para activar tu cuenta."
+      updated: 'Tu cuenta ha sido actualizada.'
       destroyed: '!Adiós! Tu cuenta ha sido cancelada. Esperamos verte pronto.'
     unlocks:
       send_instructions: 'Recibirás un email con instrucciones para desbloquear tu cuenta en pocos minutos.'
