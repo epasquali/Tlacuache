@@ -1,7 +1,5 @@
 class ListingsController < ApplicationController
   
-  include ListingsHelper
-
   before_action :set_listing, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
   before_action :owned_by, only: [:edit, :update, :destroy]
@@ -9,9 +7,11 @@ class ListingsController < ApplicationController
   layout 'nobanner', :only => [:index]
 
   def index
+    #Use listingtype so index action can work on just all buys, 
+    #or just all sells, or all listings either way.
     listingtype= listing_type.safe_constantize
-    #@listings = Listing.all
-    @listings = listingtype.all
+    #Only show listings that have not expired
+    @listings = listingtype.where("expires > ?", Date.today())
   end
 
   
@@ -31,6 +31,7 @@ class ListingsController < ApplicationController
   def create
   
     @listing = current_user.listings.build(listing_params)
+    #Automatically set expiry date to 2 weeks from now.
     @listing.set_expirydate
 
     if @listing.save

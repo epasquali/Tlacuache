@@ -3,8 +3,6 @@ class Listing < ApplicationRecord
   belongs_to :user
   has_one_attached :image
 
-  #before_validation :set_expirydate, on: :create
-
   validates :user_id, presence: true
   validates :type, type_check: true
   validates :expires, expiration_date: true

@@ -17,8 +17,4 @@ module ListingsHelper
         end  
     end
 
-    def owned_by?(user)
-        self.user_id == (user.try(:id) || user)
-    end
-
 end
