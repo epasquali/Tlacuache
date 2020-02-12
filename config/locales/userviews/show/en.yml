@@ -5,3 +5,13 @@ en:
   mylistings: "My Listings"
   postad: "Post an Ad"
   activelistings: "Active Listings"
+  show: "Show"
+  edit: "Edit"
+  delete: "Delete"
+  areyousuredeletelisting: "Are you sure you want to delete this listing?"
+  tabletitle: "Título"
+  tabledescription: "Descripción"
+  created: "Created"
+  expires: "Expires"
+  manage: "Manage"
+

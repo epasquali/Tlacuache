@@ -5,4 +5,12 @@ es:
   mylistings: "Mis Anuncios"
   postad: "Crear Anuncio"
   activelistings: "Auncios Activos"
-
+  show: "Mostrar"
+  edit: "Editar"
+  delete: "Eliminar"
+  areyousuredeletelisting: "¿Estàs seguro de que quieres eliminar a éste anuncio?"
+  tabletitle: "Título"
+  tabledescription: "Descripción"
+  created: "Creado"
+  expires: "Expira"
+  manage: "Administrar"

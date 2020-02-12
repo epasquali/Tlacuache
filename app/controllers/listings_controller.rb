@@ -31,6 +31,7 @@ class ListingsController < ApplicationController
   def create
   
     @listing = current_user.listings.build(listing_params)
+    @listing.set_expirydate
 
     if @listing.save
       flash[:success] = t 'listingcreated'

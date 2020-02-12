@@ -1,0 +1,12 @@
+
+%tr
+  %td 
+    =display_image(listing)  
+  %td= listing.title
+  %td= listing.description
+  %td= listing.created_at.strftime("%d/%m/%Y")
+  %td= listing.expires.strftime("%d/%m/%Y")
+  %td.text-center.w-25.align-middle
+    =link_to (t 'show'), listing, class: "btn btn-success btn-sm"
+    =link_to (t 'edit'), edit_listing_path(listing), class: "btn btn-primary btn-sm"
+    =link_to (t 'delete'), listing, method: :delete, data: {confirm: (t 'areyousuredeletelisting')}, class: "btn btn-danger btn-sm"

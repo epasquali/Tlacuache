@@ -67,4 +67,12 @@
             %h5.card-title.text-center.text-white.mb-0
               =t 'mylistings'
           .card-body
-            = render 'layouts/listingnavtabs'
+            -content_for :tabsell  do
+              =render partial: 'listings/listing', collection: @listings.where(type: "Sell"), as: :listing
+
+            -content_for :tabbuy do
+              =render partial: 'listings/listing', collection: @listings.where(type: "Buy"), as: :listing
+            =render 'listings/smallnavtabs'
+
+
+  

@@ -3,7 +3,7 @@ class Listing < ApplicationRecord
   belongs_to :user
   has_one_attached :image
 
-  before_validation :set_expirydate, on: :create
+  #before_validation :set_expirydate, on: :create
 
   validates :user_id, presence: true
   validates :type, type_check: true
@@ -22,10 +22,10 @@ class Listing < ApplicationRecord
     self.user_id == (user.try(:id) || user)
   end
 
-  protected
-    def set_expirydate
-      self.expires = Date.today() + 14.days
-    end
+
+  def set_expirydate
+    self.expires = Date.today() + 14.days
+  end
 
 end
   
