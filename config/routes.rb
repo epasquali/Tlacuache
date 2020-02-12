@@ -31,7 +31,7 @@ Rails.application.routes.draw do
       get    '/register', to: 'devise/registrations#new',    as: :new_user_registration
       get    '/edituser',  to: 'devise/registrations#edit',   as: :edit_user_registration
       patch  '/edituser',  to: 'devise/registrations#update', as: :user_registration
-      get    '/edituser/cancel', to: 'devise/registrations#cancel', as: :cancel_user_registration# passwords 
+      get    '/edituser/cancel', to: 'devise/registrations#cancel', as: :cancel_user_registration 
   
       # passwords
       get   'forgot-password',  to: 'devise/passwords#new',    as: :new_user_password

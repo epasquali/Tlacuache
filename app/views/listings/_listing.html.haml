@@ -7,6 +7,6 @@
   %td= listing.created_at.strftime("%d/%m/%Y")
   %td= listing.expires.strftime("%d/%m/%Y")
   %td.text-center.w-25.align-middle
-    =link_to (t 'show'), listing, class: "btn btn-success btn-sm"
-    =link_to (t 'edit'), edit_listing_path(listing), class: "btn btn-primary btn-sm"
-    =link_to (t 'delete'), listing, method: :delete, data: {confirm: (t 'areyousuredeletelisting')}, class: "btn btn-danger btn-sm"
+    =link_to "<i class = \"fas fa-eye mr-2\"></i>#{t 'show'}".html_safe, listing, class: "btn btn-green btn-sm"
+    =link_to "<i class = \"far fa-edit mr-2\"></i>#{t 'edit'}".html_safe, edit_listing_path(listing), class: "btn btn-primary btn-sm"
+    =link_to "<i class = \"far fa-trash-alt mr-2\"></i>#{t 'delete'}".html_safe, listing, method: :delete, data: {confirm: (t 'areyousuredeletelisting')}, class: "btn btn-danger btn-sm"

@@ -11,3 +11,7 @@ es:
   readprivacypolicy: "He leído y acepto la %{privacypolicy} y los %{termsandconditions} de los servicios y software de Arcadia Blockchain Technologies."
   privacypolicy: "política de privacidad"
   termsandconditions: "términos y condiciones"
+  editlogin: "Editar información de sesión"
+  newloginpwd: "Nueva contraseña:"
+  leavepwdblank: "Deja el campo de contraseña en blanco para mantener tu contraseña actual."
+  
