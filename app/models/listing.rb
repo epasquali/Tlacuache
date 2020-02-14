@@ -8,6 +8,8 @@ class Listing < ApplicationRecord
   validates :expires, expiration_date: true
   validates :title, presence: true, length: {maximum:50}
   validates :description, presence: true, length:{minimum: 40}
+  validates :image, content_type: {in: %w[image/jpeg image/gif image/png], message: :wrongimgformat},
+                                  size: {less_than: 10.megabytes, message: :imagetoobig}
 
   default_scope -> {order(created_at: :desc)}
 

@@ -8,3 +8,9 @@ es:
       listing:
         title: "Título"
         description: "Descripción"
+        image: "Foto"
+    errors:
+      messages:
+        wrongimgformat: "formato de imagen no válido"
+        imagetoobig: "el tamaño debe ser menor a 10MB"
+      

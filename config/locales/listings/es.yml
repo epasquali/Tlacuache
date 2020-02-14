@@ -12,7 +12,7 @@ es:
   listingnotcreated: "Tu anuncio no pudo ser creado. Por favor revisa tus datos e inténtalo de nuevo."
   listingupdated: "Tu anuncio ha sido actualizado."
   listingnotupdated: "Tu anuncio no pudo ser actualizado. Por favor revisa tus datos e inténtalo de nuevo."
-  listingdestroyed: "El anuncio ha sido destruido."
+  listingdestroyed: "El anuncio ha sido eliminado."
 
   previous: "Anterior"
   next: "Siguiente"

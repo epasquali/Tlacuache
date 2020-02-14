@@ -8,4 +8,9 @@ en:
       listing:
         title: "Title"
         description: "Description"
+        image: "Image"
+    errors:
+      messages:
+        wrongimgformat: "must be a valid image format"
+        imagetoobig: "should be less than 10MB"
       

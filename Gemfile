@@ -30,6 +30,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'font-awesome-rails'
 gem 'haml'
+gem 'active_storage_validations'
 
 gem 'rails-i18n'
 gem 'devise'
