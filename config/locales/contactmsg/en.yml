@@ -1,0 +1,10 @@
+en:
+  firstandlast: "Firstname, Lastname"
+  contactlistingowner: "Get in touch with the owner"
+  name: "Your full name:"
+  message: "Your message:"
+  sendmsg: "Send message"
+  sending: "Sending..."
+  contactmsgsent: "Your message to the listing's owner has ben sent successfully."
+  contactmsgnotsent: "Your message could not be sent. Please check your inputs and try again."
+  prohibitedmsg: "prohibited this message from being sent."

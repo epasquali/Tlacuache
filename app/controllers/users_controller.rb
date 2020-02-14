@@ -8,6 +8,7 @@ class UsersController < ApplicationController
         #redirect_to login_url and return unless @user.activated?
         @listings = @user.listings
     end
+
     
 
     private

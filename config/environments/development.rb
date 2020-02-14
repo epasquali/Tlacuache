@@ -32,6 +32,7 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   #Mailer
+  config.action_mailer.default_options = {from: 'apptest@tlacuache.org'}
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }

@@ -13,5 +13,17 @@ class User < ApplicationRecord
   validates :email, presence:true, length: {maximum:255},
              format: {with: VALID_EMAIL_REGEX},
              uniqueness: {case_sensitive: false}
+
+  def update_without_password(params, *options)
+
+    if params[:password].blank?
+      params.delete(:password)
+      params.delete(:password_confirmation) if params[:password_confirmation].blank?
+    end
+          
+    result = update_attributes(params, *options)
+    clean_up_passwords
+    result
+  end
              
 end

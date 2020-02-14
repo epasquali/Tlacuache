@@ -1,0 +1,13 @@
+es:
+  firstandlast: "Nombre, apellido"
+  contactlistingowner: "Envía un mensaje al anunciante"
+  name: "Tu nombre completo:"
+  message: "Tu mensaje:"
+  sendmsg: "Envía mensaje"
+  sending: "Enviando..."
+  contactmsgsent: "Tu mensaje al anunciante ha sido enviado exitosamente."
+  contactmsgnotsent: "Tu mensaje no pudo ser enviado. Por favor revisa tus 
+                      datos e inténtalo de nuevo."
+  prohibitedmsg:
+    one:  "prohibió enviar éste mensaje."
+    other: "prohibieron enviar éste mensaje."

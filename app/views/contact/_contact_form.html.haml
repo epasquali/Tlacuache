@@ -1,0 +1,29 @@
+= form_for @contactmsg, url: '/contact' do |f|
+  - if @contactmsg.errors.any?
+    #error_explanation
+      %h5
+        = pluralize(@contactmsg.errors.count, (t 'error'), locale: I18n.locale) + " " + t('prohibitedmsg', count: @contactmsg.errors.count)
+      %ul
+        - @contactmsg.errors.full_messages.each do |message|
+          %li= message
+
+  .form-group
+    = f.label :name, (t 'name')
+    = f.text_field :name, placeholder: (t 'firstandlast'), class: 'form-control'
+    
+  .form-group
+    = f.label :email, (t 'youremail')
+    = f.email_field :email, class: 'form-control'
+
+  .form-group
+    = f.label :message, (t 'message')
+    = f.text_area :message, class: 'form-control'
+
+
+    = hidden_field_tag :listing_id, listingid
+
+
+  .form-group.text-center
+    = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}
+
+

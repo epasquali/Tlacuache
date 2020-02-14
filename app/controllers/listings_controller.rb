@@ -16,6 +16,7 @@ class ListingsController < ApplicationController
 
   
   def show
+    @contactmsg = Contactmsg.new
   end
 
  
@@ -56,7 +57,7 @@ class ListingsController < ApplicationController
 
   def destroy
     @listing.destroy
-    redirect_to listings_url, notice: 'Listing has been destroyed'
+    redirect_to listings_url, notice: (t 'listingdestroyed')
   end
 
   private

@@ -4,46 +4,20 @@ Rails.application.routes.draw do
   scope "(:locale)", :locale => /#{I18n.available_locales.join("|")}/ do  
 
 
-    #devise_for :users, skip: [:sessions]
-    devise_for :users, skip: [:sessions, :registrations, :passwords], controllers: {confirmations: 'users/confirmations'}
-    #devise_for :users, skip: [:sessions, :registrations]
-  
-    #devise_for :users,
-    #:path => "users",
-    #:path_names => {
-    #  :sign_in => 'login',
-    #  :sign_out => 'logout',
-    #  :password => 'password',
-    #  :confirmation => 'activation',
-    #  :unlock => 'unlock',
-    #  :registration => 'registration',
-    #  :sign_up => 'register' }
- 
-
-    devise_scope :user do
-      
-      # sessions
-      get    '/login',  to: 'devise/sessions#new',     as: :new_user_session
-      post   '/login',  to: 'devise/sessions#create',  as: :user_session
-      delete '/logout', to: 'devise/sessions#destroy', as: :destroy_user_session
-      
+    devise_for :users, skip: [:registrations], controllers: {confirmations: 'user/confirmations'}, 
+                        path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register', 
+                                               password: 'password', confirmation: 'account-activation'}
+    
+    devise_scope :user do      
       # registrations
-      put    '/users',  to: 'devise/registrations#update'
-      delete '/users',  to: 'devise/registrations#destroy'
-      post   '/users',  to: 'devise/registrations#create'
-      get    '/register', to: 'devise/registrations#new',    as: :new_user_registration
-      get    '/users/edit',  to: 'devise/registrations#edit',   as: :edit_user_registration
-      patch  '/users',  to: 'devise/registrations#update', as: :user_registration
-      get    '/users/cancel', to: 'devise/registrations#cancel', as: :cancel_user_registration 
-  
-      # passwords
-      get   'forgot-password',  to: 'devise/passwords#new',    as: :new_user_password
-      get   'users/password/edit', to: 'devise/passwords#edit',   as: :edit_user_password
-      patch 'users/password', to: 'devise/passwords#update'
-      put 'users/password', to: 'devise/passwords#update'
-      post  'users/password',  to: 'devise/passwords#create', as: :user_password
-    
-    
+      put    '/users/:id',  to: 'user/registrations#update'
+      delete '/users/:id',  to: 'user/registrations#destroy'
+      post   '/users/:id',  to: 'user/registrations#create'
+      get    '/register', to: 'user/registrations#new',    as: :new_user_registration
+      get    '/users/:id/edit',  to: 'user/registrations#edit',   as: :edit_user_registration
+      patch  '/users/:id',  to: 'user/registrations#update', as: :user_registration
+      get    '/users/:id/cancel', to: 'user/registrations#cancel', as: :cancel_user_registration 
+      
     end
 
 
@@ -51,6 +25,9 @@ Rails.application.routes.draw do
     resources :listings
     resources :buys, controller:"listings", type:"Buy"
     resources :sells, controller:"listings", type:"Sell"
+    resources :contactmsg, only: [:listing_contact]
+
+    post '/contact', to: 'contacts#listing_contact'
 
 
     root 'listings#index'

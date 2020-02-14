@@ -4,11 +4,15 @@ en:
       user: user
     attributes:
       user: 
-        email: "email"
+        email: "Email"
       listing:
         title: "Title"
         description: "Description"
         image: "Image"
+      contactmsg:
+        name: "Name"
+        email: "Email"
+        message: "Message"
     errors:
       messages:
         wrongimgformat: "must be a valid image format"

@@ -9,6 +9,10 @@ es:
         title: "Título"
         description: "Descripción"
         image: "Foto"
+      contactmsg:
+        name: "Nombre"
+        email: "Dirección email"
+        message: "Mensaje"
     errors:
       messages:
         wrongimgformat: "formato de imagen no válido"
