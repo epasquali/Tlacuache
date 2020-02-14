@@ -2,5 +2,5 @@ es:
   forgotpasswordsad: "Se me olvidó mi contraseña :("
   passwordreset: "Restablecer mi contraseña"
   resetpassword: "Restablecer contraseña"
-  enternewpassword: "Introduce tu nueva contraseña"
+  enternewpassword: "Introduce tu nueva contraseña:"
   updatepassword: "Actualizar contraseña"

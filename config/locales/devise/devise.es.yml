@@ -2,7 +2,7 @@ es:
   errors:
     messages:
       not_found: 'no encontrado'
-      already_confirmed: 'ya ha sido confirmada'
+      already_confirmed: 'ya ha sido confirmado'
       not_locked: 'no está bloqueada'
       not_saved:
         one: "1 error prohibió registrar a éste %{resource}:"
@@ -14,7 +14,8 @@ es:
       unauthenticated: 'Necesitas acceder a tu cuenta o registrarte antes de continuar.'
       unconfirmed: 'Necesitas confirmar tu cuenta antes de continuar.'
       locked: 'Tu cuenta está bloqueada.'
-      invalid: 'Contraseña o Email incorrecto.'
+      not_found_in_database: "La contraseña o el correo electrónico no son válidos."
+      invalid: 'La contraseña o el correo electrónico no son válidos.'
       invalid_token: 'Token de autenticación incorrecto.'
       timeout: 'Tu sesión ha expirado, por favor accede de nuevo para continuar.'
       inactive: 'Tu cuenta no ha sido activada.'
@@ -25,8 +26,8 @@ es:
       send_instructions: 'Recibirás un email con instrucciones para cambiar tu contraseña en pocos minutos.'
       updated: 'Tu contraseña ha sido modificada. Ya has accedido a tu cuenta.'
     confirmations:
-      send_instructions: 'Recibirás un email con instrucciones para confirmar tu cuenta en pocos minutos.'
-      confirmed: 'Tu cuenta ha sido confirmada. Ya has accedido a tu cuenta.'
+      send_instructions: 'Recibirás un correo electrónico con instrucciones para confirmar tu cuenta en pocos minutos.'
+      confirmed: 'Tu dirección de correo electrónico ha sido confirmada. Ya puedes acceder a tu cuenta.'
     registrations:
       signed_up: 'Te has registrado correctamente. Si está disponible, te habremos enviado un email de confirmación.'
       signed_up_but_unconfirmed: "Un correo con un enlace de confirmación ha sido enviado a tu dirección email. Por favor
