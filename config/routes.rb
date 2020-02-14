@@ -10,14 +10,15 @@ Rails.application.routes.draw do
     
     devise_scope :user do      
       # registrations
-      put    '/users/:id',  to: 'user/registrations#update'
-      delete '/users/:id',  to: 'user/registrations#destroy'
-      post   '/users/:id',  to: 'user/registrations#create'
+      put    '/users',  to: 'user/registrations#update'
+      delete '/users',  to: 'user/registrations#destroy'
+      post   '/users',  to: 'user/registrations#create'
       get    '/register', to: 'user/registrations#new',    as: :new_user_registration
       get    '/users/:id/edit',  to: 'user/registrations#edit',   as: :edit_user_registration
-      patch  '/users/:id',  to: 'user/registrations#update', as: :user_registration
-      get    '/users/:id/cancel', to: 'user/registrations#cancel', as: :cancel_user_registration 
-      
+      patch  '/users',  to: 'user/registrations#update', as: :user_registration
+      get    '/users/cancel', to: 'user/registrations#cancel', as: :cancel_user_registration 
+
+
     end
 
 
