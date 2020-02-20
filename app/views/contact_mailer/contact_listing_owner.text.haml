@@ -1,0 +1,37 @@
+
+:plain
+=(t 'contactmsg.hello') + ", " + @user.firstname + ","
+
+:plain
+=(t 'contactmsg.someoneinterested') + " ***" + @listing.title + "*** " + (t 'contactmsg.sentyoumessage')
+
+
+:plain
+:plain
+  ----------------------------------------------------------------------------
+
+=(t 'contactmsg.theirname')  + " " + @contactmsg.name
+
+
+:plain
+=(t 'contactmsg.theiremail') + " " + @contactmsg.email
+
+
+:plain
+=(t 'contactmsg.theirmsg')  
+=@contactmsg.message.html_safe
+
+:plain
+  -----------------------------------------------------------------------------
+
+:plain
+=(t 'contactmsg.plsgetintouch') + @contactmsg.email + "."
+
+
+:plain   
+:plain
+=t 'contactmsg.bye'
+
+:plain
+= (t 'contactmsg.tlacuachesig') + "El Tlacuache"
+www.tlacuache.org
