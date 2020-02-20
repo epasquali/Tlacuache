@@ -5,6 +5,7 @@ class UsersController < ApplicationController
    
     def show
         @user = User.find(params[:id])
+        @rndquote = (t 'earthquotes').sample 
         #redirect_to login_url and return unless @user.activated?
         @listings = @user.listings
     end
@@ -15,8 +16,7 @@ class UsersController < ApplicationController
 
       def correct_user
         @user = User.find(params[:id])
-        #redirect_to(user_path(current_user)) unless ( (current_user == @user) || current_user.admin)
-        redirect_to(user_path(current_user)) unless (current_user == @user)
+        redirect_to(user_path(current_user)) unless ( (current_user == @user) || current_user.admin)
       end
     
 

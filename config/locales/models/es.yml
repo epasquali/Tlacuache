@@ -4,7 +4,10 @@ es:
       user: usuario
     attributes:
       user:
+        firstname: "Nombre"
+        lastname: "Apellido"
         email: "Correo electrónico"
+        password: "Contraseña"
       listing:
         title: "Título"
         description: "Descripción"

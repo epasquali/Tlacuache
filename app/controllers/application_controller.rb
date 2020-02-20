@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-    before_action :set_locale
+    around_action :switch_locale
 
     #Devise redirect route overrides
     def after_sign_in_path_for(resource)
@@ -15,6 +15,12 @@ class ApplicationController < ActionController::Base
     #Localization
     def default_url_options
       { locale: I18n.locale }
+    end
+
+    def switch_locale(&action)
+      locale = params[:locale] || I18n.default_locale
+      I18n.with_locale(locale, &action)
+      #I18n.locale=locale
     end
 
     def set_locale

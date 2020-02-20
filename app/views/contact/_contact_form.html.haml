@@ -1,7 +1,7 @@
-= form_for @contactmsg, url: '/contact' do |f|
+= form_for @contactmsg, url: contact_path do |f|
   - if @contactmsg.errors.any?
     #error_explanation
-      %h5
+      %h6
         = pluralize(@contactmsg.errors.count, (t 'error'), locale: I18n.locale) + " " + t('prohibitedmsg', count: @contactmsg.errors.count)
       %ul
         - @contactmsg.errors.full_messages.each do |message|

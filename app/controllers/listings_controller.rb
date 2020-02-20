@@ -76,7 +76,6 @@ class ListingsController < ApplicationController
     end
 
     def owned_by
-      #redirect_to(user_path(current_user)) unless ( (current_user.id == @listing.user_id) || current_user.admin)
-      redirect_to(user_path(current_user)) unless (current_user.id == @listing.user_id)
+      redirect_to(user_path(current_user)) unless ( (current_user.id == @listing.user_id) || current_user.admin)
     end
 end
