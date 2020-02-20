@@ -8,3 +8,16 @@ en:
   contactmsgsent: "Your message to the listing's owner has ben sent successfully."
   contactmsgnotsent: "Your message could not be sent. Please check your inputs and try again."
   prohibitedmsg: "prohibited this message from being sent."
+
+  contactmsg: 
+    subjectline: "El Tlacuache -- someone is interested in your listing!"  
+    hello: "Hello"
+    someoneinterested: "Someone is interested in your ad,"
+    sentyoumessage: "and sent you this message:"
+    theirname: "Name:"
+    theiremail: "Email address:"
+    theirmsg: "Their message:"
+    plsgetintouch: "Please get in touch with them by replying
+                    to this email or by emailing them directly at:"
+    bye: "See you soon,"
+    tlacuachesig: "Your friends at"

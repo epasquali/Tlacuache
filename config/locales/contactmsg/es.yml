@@ -11,3 +11,16 @@ es:
   prohibitedmsg:
     one:  "prohibió enviar éste mensaje."
     other: "prohibieron enviar éste mensaje."
+
+  contactmsg: 
+    subjectline: "El Tlacuache -- a alguien le interesa tu anuncio!"
+    hello: "Hola"
+    someoneinterested: "A alguien le interesa tu anuncio,"
+    sentyoumessage: "y te envió el siguiente mensaje:"
+    theirname: "Nombre:"
+    theiremail: "Dirección email:"
+    theirmsg: "Mensaje:"
+    plsgetintouch: "Por favor ponte en contacto con ellos respondiendo a éste mensaje 
+                    o escribiéndoles directamente a: "
+    bye: "Hasta pronto,"
+    tlacuachesig: "Tus amigos de "

@@ -5,6 +5,8 @@ class ContactMailer < ApplicationMailer
       @user = listing.user
       @contactmsg = contactmsg
       @listing = listing
-      mail to: listing.user.email, reply_to: contactmsg.email, subject: "El Tlacuache -- tu anuncio "
+      
+      mail to: listing.user.email, reply_to: contactmsg.email, subject: (t 'contactmsg.subjectline')
     end
+
 end

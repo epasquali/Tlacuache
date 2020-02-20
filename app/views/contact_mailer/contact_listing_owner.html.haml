@@ -1,18 +1,40 @@
-Hola, 
-=@user.email
+%p
+  =(t 'contactmsg.hello') + ", " + @user.email + ","
 
-A alguien le interesa tu anuncio "
-=@listing.title
-" y te mando este mensaje:
 
-Nombre: 
-=@contactmsg.name
+%p
+  =t 'contactmsg.someoneinterested'
+  "
+  =@listing.title
+  " 
+  = t'contactmsg.sentyoumessage'
 
-Mensaje: 
-=@contactmsg.message
+%hr
+%p
+  %strong
+    =t 'contactmsg.theirname'  |
+  =@contactmsg.name
 
-Por favor ponte en contacto con ellos respondiendo a este mensaje o 
-escribiendoles directamente a 
-=@contactmsg.email
+%p
+  %strong
+    =t 'contactmsg.theiremail' |
+  =@contactmsg.email
 
-This is a test of the listing contact email thank you.
+%p
+  %strong
+    =t 'contactmsg.theirmsg' 
+  =@contactmsg.message
+
+%hr
+%p
+  =t 'contactmsg.plsgetintouch'
+  %strong
+    =@contactmsg.email
+  ='.' 
+%br    
+%p
+  =t 'contactmsg.bye'
+
+%p
+  = t 'contactmsg.tlacuachesig' |
+  = link_to "El Tlacuache", 'https://www.tlacuache.org'

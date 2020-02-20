@@ -17,8 +17,6 @@ Rails.application.routes.draw do
       get    '/users/:id/edit',  to: 'user/registrations#edit',   as: :edit_user_registration
       patch  '/users',  to: 'user/registrations#update', as: :user_registration
       get    '/users/cancel', to: 'user/registrations#cancel', as: :cancel_user_registration 
-
-
     end
 
 
