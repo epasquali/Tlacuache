@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
 
     around_action :switch_locale
+    #before_action :set_locale
+    prepend_before_action :set_locale
 
     #Devise redirect route overrides
     def after_sign_in_path_for(resource)

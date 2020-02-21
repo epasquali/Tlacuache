@@ -25,6 +25,8 @@ module Tlacuache
     I18n.default_locale = :es
     I18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
 
-
   end
+
+
+
 end
