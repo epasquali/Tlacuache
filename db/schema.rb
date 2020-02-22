@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_20_133757) do
+ActiveRecord::Schema.define(version: 2020_02_22_091844) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -41,6 +41,9 @@ ActiveRecord::Schema.define(version: 2020_02_20_133757) do
     t.string "type"
     t.date "expires"
     t.integer "user_id"
+    t.string "city"
+    t.string "state"
+    t.string "country"
     t.index ["user_id", "created_at"], name: "index_listings_on_user_id_and_created_at"
   end
 

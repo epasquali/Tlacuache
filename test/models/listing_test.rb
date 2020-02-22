@@ -4,13 +4,13 @@ class ListingTest < ActiveSupport::TestCase
  
 
   setup do
-    @user = users(:one)
-    @buylisting = listings(:buy)
-    @selllisting = listings(:sell)
-    @buylisting.user_id = @user.id
-    @selllisting.user_id = @user.id
-    #@buylisting = @user.listings.create(title: "Buy title", description: "Buy description"*5, type: "Buy")
-    #@selllisting = @user.listings.build(title: "Sell title", description: "Sell description"*5, type: "Sell")
+    @user = users(:ben)
+    #@buylisting = listings(:buy)
+    #@selllisting = listings(:sell)
+    #@buylisting.user_id = @user.id
+    #@selllisting.user_id = @user.id
+    @buylisting = @user.listings.create(title: "Buy title", description: "Buy description"*5, type: "Buy", expires: Date.today() + 14.days())
+    @selllisting = @user.listings.build(title: "Sell title", description: "Sell description"*5, type: "Sell", expires: Date.today() + 14.days())
   end
 
 

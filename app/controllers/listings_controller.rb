@@ -72,7 +72,7 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(listing_type.underscore.to_sym).permit(:type, :title, :description, :image, :user_id)
+      params.require(listing_type.underscore.to_sym).permit(:type, :city, :state, :country, :title, :description, :image, :user_id)
     end
 
     def owned_by

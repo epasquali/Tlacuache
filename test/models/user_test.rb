@@ -12,6 +12,26 @@ class UserTest < ActiveSupport::TestCase
     assert @user.valid?
   end
 
+  test "user should have firstname" do
+    @user.firstname = ''
+    assert_not @user.valid?
+  end
+
+  test "user firstname should not be too long" do
+    @user.firstname = "a"*51
+    assert_not @user.valid?
+  end
+
+  test "user should have lastname" do
+    @user.lastname = ''
+    assert_not @user.valid?
+  end
+
+  test "user lastname should not be too long" do
+    @user.firstname = "a"*51
+    assert_not @user.valid?
+  end
+
   test "user should have an email" do
     @user.email = ''
     assert_not @user.valid?

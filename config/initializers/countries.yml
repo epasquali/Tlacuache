@@ -1,0 +1,101 @@
+#Country codes and region/state/province abbreviations according to 
+#ISO 3166-2.
+
+KH: &KH
+  name: 'Cambodia'
+  regions: ['Phnom Penh', 'Baad Dambang', 'Banteay Mean Chey', 'Kampong Chaam',
+             'Kampong Chhnang', 'Kampong Spueu', 'Kampong Thum', 'Kampot',
+             'Kandaal', 'Kaoh Kong', 'Kracheh', 'Kaeb', 
+             'Pailin','Preah Sihanouk', 'Mondol Kiri', 'Odtar Mean Chey', 
+             'Pousaat','Preah Vihear', 'Prey Veaeng', 'Rotanak Kiri', 
+             'Siem Reab', 'Stueng Traeng', 'Svaay Rieng', 'Taakaev', 
+             'Tbong Khmum'] 
+
+
+DE: &DE
+  name: 'Germany'
+  regions: ['BW', 'BY', 'BE', 'BB', 'HB', 'HH', 'HE', 'MV', 'NI', 'NW',
+            'RP', 'SL', 'SN', 'ST', 'SH', 'TH']
+
+GR: &GR 
+  name: 'Greece'
+  regions: ['Ágion Óros','Anatolikí Makedonía kai Thráki', 'Attikí',
+            'Dytikí Elláda', 'Dytikí Makedonía', 'Ionía Nísia', 
+            'Ípeiros', 'Kentrikí Makedonía', 'Kríti', 
+            'Nótio Aigaío', 'Pelóponnisos', 'Stereá Elláda',
+            'Thessalía', 'Vóreio Aigaío']
+
+IT: &IT
+  name: 'Italy'
+  regions: ['AL', 'AN', 'AO', 'AR', 'AP', 'AT', 'AV', 'BT', 'BL', 'BN', 
+            'BG', 'BI', 'BZ', 'BS', 'BR', 'CB', 'CE', 'CZ', 'CH', 'CO',
+            'CS', 'CR', 'KR', 'CN', 'FM', 'FE', 'FG', 'FC', 'FR', 'GR',
+            'IM', 'IS', 'SP', 'AQ', 'LT', 'LE', 'LC', 'LI', 'LO', 'LU',
+            'MC', 'MN', 'MS', 'MT', 'MO', 'MB', 'NO', 'NU', 'OR', 'PD',
+            'PR', 'PV', 'PG', 'PU', 'PE', 'PC', 'PI', 'PT', 'PZ', 'PO',
+            'RA', 'RE', 'RI', 'RN', 'RO', 'SA', 'SS', 'SV', 'SI', 'SO', 
+            'SD', 'TA', 'TE', 'TR', 'TN', 'TV', 'VA', 'VB', 'VC', 'VR', 
+            'VV', 'VI', 'VT']
+
+MX: &MX
+  name: 'Mexico'
+  regions: ['CMX', 'AGU', 'BCN', 'BCS', 'CAM', 'COA', 'COL', 'CHP', 'CHH',
+             'DUR', 'GUA', 'GRO', 'HID', 'JAL', 'MEX', 'MIC', 'MOR', 'NAY',
+             'NLE', 'OAX', 'PUE', 'QUE', 'ROO', 'SLP', 'SIN', 'SON', 'TAB',
+             'TAM', 'TLA', 'VER', 'YUC', 'ZAC']
+
+MZ: &MZ
+  name: 'Mozambique'
+  regions: ['Maputo City', 'Cabo Delgado', 'Gaza', 'Inhambane', 'Manica', 
+            'Maputo Province', 'Nampula', 'Niassa', 'Sofala', 'Tete', 
+            'Zambézia']
+             
+PE: &PE
+  name: 'Peru'
+  regions: ['LMA', 'AMA', 'ANC', 'APU', 'ARE', 'AYA', 'CAJ', 'CUS', 'CAL',
+            'HUV', 'HUC', 'ICA', 'JUN', 'LAL', 'LAM', 'LIM', 'LOR', 'MDD', 
+            'MOQ', 'PAS', 'PIU', 'PUN', 'SAM', 'TAC', 'TUM', 'UCA']
+
+PH: &PH
+  name: 'Philippines'
+  regions: ['Metro Manila', 'ABR', 'AGN', 'AGS', 'AKL', 'ALB', 'ANT', 'APA', 'AUR', 'BAS',
+            'BAN', 'BTN', 'BTG', 'BEN', 'BIL', 'BOH', 'BUK', 'BUL', 'CAG', 'CAN',
+            'CAS', 'CAM', 'CAP', 'CAT', 'CAV', 'CEB', 'COM', 'NCO', 'DAV', 'DAS', 
+            'DVO', 'DAO', 'DIN', 'EAS', 'GUI', 'IFU', 'ILN', 'ILS', 'ILI', 'ISA',
+            'KAL', 'LUN', 'LAG', 'LAN', 'LAS', 'LEY', 'MAG', 'MAD', 'MAS', 'MDC',
+            'MDR', 'MSC', 'MSR', 'MOU', 'NEC', 'NER', 'NSA', 'NUE', 'NUV', 'PLW', 
+            'PAM', 'PAN', 'QUE', 'QUI', 'RIZ', 'ROM', 'WSA', 'SAR', 'SIG', 'SOR',
+            'SCO', 'SLE', 'SUK', 'SLU', 'SUN', 'SUR', 'TAR', 'TAW', 'ZMB', 'ZAN',  
+            'ZAS', 'ZSI']
+
+ES: &ES
+  name: 'Spain'
+  regions: ['A Coruña', 'Álava', 'Albacete', 'Alicante',  'Almería', 
+            'Asturias', 'Ávila', 'Badajoz', 'Balears', 'Barcelona',
+            'Bizkaia', 'Burgos', 'Cáceres', 'Cádiz', 'Cantabria',
+            'Castellón', 'Ciudad Real', 'Córdoba', 'Cuenca', 'Gipuzkoa',
+            'Girona', 'Granada', 'Guadalajara', 'Huelva', 'Huesca',
+            'Jaén', 'La Rioja', 'Las Palmas', 'León', 'Lleida',
+            'Lugo', 'Madrid', 'Málaga', 'Murcia', 'Navarra',
+            'Ourense', 'Palencia', 'Pontevedra', 'Salaanca', 'Santa Cruz de Tenerife',
+            'Segovia', 'Sevilla', 'Soria', 'Tarragona', 'Teruel',
+            'Toledo', 'Valencia', 'Valladolid', 'Zamora', 'Zaragoza']
+
+CH: &CH
+  name: 'Switzerland'
+  regions: ['AG', 'AR', 'AI', 'BL', 'BS', 'BE', 'FR', 'GE', 'GL', 'GR', 
+            'JU', 'LU', 'NE', 'NW', 'OW', 'SG', 'SH', 'SZ', 'SO', 'TG', 
+            'TI', 'UR', 'VD', 'VS', 'ZG', 'ZH']
+
+GB: &GB
+  name: 'United Kingdom'
+  regions: ['England', 'Northern Ireland', 'Scotland', 'Wales']
+
+US: &US
+  name: 'United States of America'
+  regions: ['AL', 'AK', 'AZ', 'AR', 'CA', 'CO', 'CT', 'DE', 'FL', GA, 
+            'HI', 'ID', 'IL', 'IN', 'IA', 'KS', 'KY', 'LA', 'ME', 'MD', 
+            'MA', 'MI', 'MN', 'MS', 'MO', 'MT', 'NE', 'NV', 'NH', 'NJ', 
+            'NM', 'NY', 'NC', 'ND', 'OH', 'OK', 'OR', 'PA', 'RI', 'SC', 
+            'SD', 'TN', 'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 'WI', 'WY']
+    

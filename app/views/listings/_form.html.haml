@@ -25,14 +25,28 @@
             = f.radio_button :type, 'Buy'
             =t 'seeking'
 
-  
+    
     .form-group
       = f.label :title, (t 'title')
       = f.text_field :title, class: 'form-control'
 
     .form-group
       = f.label :description, (t 'description')
-      = f.text_area :description, class: 'form-control'
+      = f.text_area :description, placeholder: (t 'descriptiontips'), class: 'form-control'
+
+    -#Leave this out for now. Only add it once we expand outside of GDL.
+    -#.form-group
+    -#  .row
+    -#    .col
+    -#      = f.label :city, (t 'city')
+    -#      = f.text_field :city, class: 'form-control'
+    -#    .col
+    -#      = f.label :state, (t 'stateprovince')
+    -#      = f.select :state, '---', {}, class: 'form-control'
+    -#    .col  
+    -#      = f.label :country, (t 'country')
+    -#      = f.select :country, GENERALCFG['countrydata'].map{|x| x['name']}, {}, {class: 'form-control', selected: "Mexico", onChange: "populateregions();"}
+  
 
     .form-group
       = f.label :image, (t 'uploadphoto')
@@ -43,3 +57,4 @@
       = f.button buttoncaption, class: 'btn btn-success', data: {disable_with: debouncecaption}
 
 
+#countrydata{data: GENERALCFG['countrydata'].to_json.html_safe}

@@ -35,6 +35,11 @@ en:
   selecttype: "Select the type of listing:"
   title: "Title:"
   description: "Description:"
+  descriptiontips: "Describe what you're donating. Don't forget to give details
+                    on where, when, and how to pick the item up."
+  city: "City:"
+  stateprovince: "State:"
+  country: "Country:"
   uploadphoto: "Upload your photo:"
   back: "Back"
 

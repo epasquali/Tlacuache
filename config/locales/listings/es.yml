@@ -32,6 +32,11 @@ es:
   selecttype: "Selecciona el tipo de anuncio:"
   title: "Título del anuncio:"
   description: "Descripción:"
+  descriptiontips: "Describe lo que estás regalando. No olvides incluir detalles sobre
+                    cómo, cuándo, y dónde recogerlo."
+  city: "Ciudad:"
+  stateprovince: "Estado:"
+  country: "País:"
   uploadphoto: "Sube tu foto:"
   back: "Regresar"
 

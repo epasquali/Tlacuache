@@ -5,10 +5,16 @@
 # below each fixture, per the syntax in the comments below
 #
 one: 
+  firstname: "Number 1"
+  lastname: "Number 1 Lastname"
   email: one@example.com
 
 two:
+  firstname: "Number 2"
+  lastname: "Number 2 Lastname"
   email: two@example.com
 
 ben:
+  firstname: "Ben"
+  lastname: "Bitdiddle"
   email: ben@example.com
