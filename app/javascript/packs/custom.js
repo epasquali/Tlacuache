@@ -54,3 +54,5 @@ window.togglepwdeye = function ()
       $('.fa-eye').toggleClass("fa-eye-slash");
     }
 }
+
+

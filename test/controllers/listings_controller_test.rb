@@ -2,10 +2,13 @@ require 'test_helper'
 
 class ListingsControllerTest < ActionDispatch::IntegrationTest
   
+  include Devise::Test::IntegrationHelpers
+
   setup do
     @user = users(:one)
     @listing = listings(:buy)
     @listing.user_id = @user.id
+    sign_in @user
   end
 
   test "should get index" do
@@ -16,6 +19,12 @@ class ListingsControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
     get new_listing_url
     assert_response :success
+  end
+
+  test "should not get new unless signed in" do
+    sign_out @user
+    get new_listing_url
+    assert_redirected_to new_user_session_path
   end
 
   test "should create listing" do
