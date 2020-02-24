@@ -4,6 +4,11 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "on", :name => "twitter:dnt"}/
+
+    / -- Social Media and sharing
+    %meta{:property => "og:image", :content => image_url("flowers.jpg")}
+    %meta{:content => "@Tlacuacheorg", :name => "twitter:site"}/
+
     
     %title El Tlacuache
     = csrf_meta_tags
@@ -13,6 +18,8 @@
     %noscript
       %meta{:content => "2;url=/nojavascript.html?locale=#{I18n.locale}", "http-equiv" => "refresh"}
 
+
+    
 
 :javascript
   window['_fs_debug'] = false;
