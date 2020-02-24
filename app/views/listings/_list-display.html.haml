@@ -1,22 +1,23 @@
-%table.table.text-left
-  %thead
-    %tr
-      %th 
-      %th 
-      %th 
-      %th
-
-  %tbody
-    - @listings.where(filtercondition).each do |listing|
+.table-responsive
+  %table.table.text-left
+    %thead
       %tr
-        %td
-          =display_image(listing)  
-        %td= listing.title
-        %td= listing.description
-        %td.text-center.w-25.align-middle
-          -if (current_user && current_user.admin?)
-            =link_to "<i class = \"fas fa-eye mr-2\"></i>#{t 'show'}".html_safe, listing, class: "btn btn-primary btn-sm"
-            =link_to "<i class = \"far fa-edit mr-2\"></i>#{t 'edit'}".html_safe, edit_listing_path(listing), class: "btn btn-secondary btn-sm"
-            =link_to "<i class = \"far fa-trash-alt mr-2\"></i>#{t 'delete'}".html_safe, listing, method: :delete, data: {confirm: (t 'areyousuredeletelisting')}, class: "btn btn-danger btn-sm"
-          -else
-            =link_to (t 'viewdetails'), listing, class: "btn btn-primary"
+        %th 
+        %th 
+        %th 
+        %th
+
+    %tbody
+      - @listings.where(filtercondition).each do |listing|
+        %tr
+          %td
+            =display_image(listing)  
+          %td= listing.title
+          %td= listing.description
+          %td.text-center.w-25.align-middle
+            -if (current_user && current_user.admin?)
+              =link_to "<i class = \"fas fa-eye mr-2\"></i>#{t 'show'}".html_safe, listing, class: "btn btn-primary btn-sm"
+              =link_to "<i class = \"far fa-edit mr-2\"></i>#{t 'edit'}".html_safe, edit_listing_path(listing), class: "btn btn-secondary btn-sm"
+              =link_to "<i class = \"far fa-trash-alt mr-2\"></i>#{t 'delete'}".html_safe, listing, method: :delete, data: {confirm: (t 'areyousuredeletelisting')}, class: "btn btn-danger btn-sm"
+            -else
+              =link_to (t 'viewdetails'), listing, class: "btn btn-primary"

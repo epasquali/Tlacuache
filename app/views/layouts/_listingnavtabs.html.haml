@@ -9,8 +9,14 @@
 
 #sbpills-tabContent.tab-content
   #pills-sell.tab-pane.fade.show.active{"aria-labelledby" => "pills-sell-tab", :role => "tabpanel"}
-    = render 'layouts/gridlisticons', filtercondition: {type: "Sell"}, idno: '1'
+    -if mobile_device !="mobile"
+      = render 'layouts/gridlisticons', filtercondition: {type: "Sell"}, idno: '1'
+    -else
+      = render 'listings/grid-display', filtercondition: {type: "Sell"}
   #pills-buy.tab-pane.fade{"aria-labelledby" => "pills-buy-tab", :role => "tabpanel"}
-    = render 'layouts/gridlisticons', filtercondition: {type: "Buy"}, idno: '2'
+    -if mobile_device != "mobile"
+      = render 'layouts/gridlisticons', filtercondition: {type: "Buy"}, idno: '2'
+    -else
+      = render 'listings/grid-display', filtercondition: {type: "Buy"}
     
 
