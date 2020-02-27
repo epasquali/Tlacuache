@@ -1,5 +1,6 @@
 en:
   login: "Log In"
+  orloginwith: "Or log in with:"
   youremail: "Your email address:"
   password: "Password:"
   forgotpassword: "I forgot my password."
@@ -7,3 +8,7 @@ en:
   registerforaccount: "Register for an account!"
   sendacctactivationlink: "Send account activation link"
   sendlink: "Send link"
+  facebookloginunsuccessful: "There was an error using your Facebook login. Please create a new user account to continue."
+  googleloginunsuccessful: "There was an error using your Google login. Please create a new user account to continue."
+  socialloginfb: "Sign in with Facebook"
+  sociallogingoogle: "Sign in with Google"

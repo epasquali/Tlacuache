@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   
 
+  devise_for :users, only: :omniauth_callbacks, controllers: {omniauth_callbacks: 'user/omniauth_callbacks'}
+
   scope "(:locale)", :locale => /#{I18n.available_locales.join("|")}/ do  
 
 
-    devise_for :users, skip: [:registrations], controllers: {confirmations: 'user/confirmations'}, 
+    devise_for :users, skip: [:registrations, :omniauth_callbacks], controllers: {confirmations: 'user/confirmations'}, 
                         path: '', path_names: {sign_in: 'login', sign_out: 'logout', sign_up: 'register', 
                                                password: 'password', confirmation: 'account-activation'}
     

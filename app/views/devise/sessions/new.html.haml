@@ -1,2 +1,8 @@
-.container-fluid
-  =render 'devise/sessions/loginform', buttoncaption: "#{t 'login'}"
+.container-fluid.flexiwidth75
+  .row
+    .col-md
+      =render 'devise/sessions/loginform', buttoncaption: "#{t 'login'}"
+      -#=render 'devise/sessions/sociallogins'
+    .col-md
+      =render 'devise/sessions/sociallogins'
+      -#=render 'devise/sessions/loginform', buttoncaption: "#{t 'login'}"

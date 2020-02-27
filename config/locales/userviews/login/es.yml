@@ -1,9 +1,16 @@
 es:
   login: "Iniciar sesión"
+  orloginwith: "O ingresa con:"
   youremail: "Tu dirección de correo electrónico:"
   password: "Contraseña:"
   forgotpassword: "Se me olvidó mi contraseña."
   newuser: "¿Todavía no tienes cuenta?"
   registerforaccount: "¡Regístrate aquí!"
   sendacctactivationlink: "Enviar enlace de activación de cuenta"
+  facebookloginunsuccessful: "Hubo un error al utilizar tu cuenta de Facebook. 
+                              Por favor registra una nueva cuenta de usuario para continuar."
+  googleloginunsuccessful: "Hubo un error al utilizar tu cuenta de Google. 
+                              Por favor registra una nueva cuenta de usuario para continuar."
   sendlink: "Enviar enlace"
+  socialloginfb: "Ingresa con Facebook"
+  sociallogingoogle: "Ingresa con Google"

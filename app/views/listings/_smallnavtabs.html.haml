@@ -9,36 +9,38 @@
 
 #sbpills-tabContent.tab-content
   #pills-sell.tab-pane.fade.show.active{"aria-labelledby" => "pills-sell-tab", :role => "tabpanel"}
-    %table.table.text-left
-      %thead
-        %tr
-          %th 
-          %th 
-            = t 'tabletitle'
-          %th 
-            =t 'tabledescription'
-          %th
-            =t 'created'
-          %th
-            =t 'expires'
-          %th.text-center 
-            =t 'manage'
-      %tbody
-        = yield :tabsell
+    .table-responsive
+      %table.table.text-left
+        %thead
+          %tr
+            %th 
+            %th 
+              = t 'tabletitle'
+            %th 
+              =t 'tabledescription'
+            %th
+              =t 'created'
+            %th
+              =t 'expires'
+            %th.text-center 
+              =t 'manage'
+        %tbody
+          = yield :tabsell
   #pills-buy.tab-pane.fade{"aria-labelledby" => "pills-buy-tab", :role => "tabpanel"}
-    %table.table.text-left
-      %thead
-        %tr
-          %th 
-          %th 
-            = t 'tabletitle'
-          %th 
-            =t 'tabledescription'
-          %th
-            =t 'created'
-          %th
-            =t 'expires'
-          %th.text-center 
-            =t 'manage'
-      %tbody
-        = yield :tabbuy
+    .table-responsive
+      %table.table.text-left
+        %thead
+          %tr
+            %th 
+            %th 
+              = t 'tabletitle'
+            %th 
+              =t 'tabledescription'
+            %th
+              =t 'created'
+            %th
+              =t 'expires'
+            %th.text-center 
+              =t 'manage'
+        %tbody
+          = yield :tabbuy

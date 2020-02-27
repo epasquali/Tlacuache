@@ -1,0 +1,8 @@
+.form-wrapper.w-100.pb-2.mb-5
+  %h5.box-title.text-center.pb-3
+    =t 'orloginwith'
+    %p.text-center
+      = link_to "<i class = \"fab fa-facebook-square fa-lg mr-2\"></i>#{t 'socialloginfb'}".html_safe, user_facebook_omniauth_authorize_path, class: 'nav-link btn btn-fbblue mt-5 mb-2'
+    %p.text-center 
+      = link_to "<i class = \"fab fa-google fa-lg mr-2\"></i>#{t 'sociallogingoogle'}".html_safe, user_google_oauth2_omniauth_authorize_path, class: 'nav-link btn btn-danger my-5'
+    %p.text-center

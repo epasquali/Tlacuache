@@ -12,7 +12,8 @@ es:
     failure:
       already_authenticated: "Tu sesión ya estaba iniciada."
       unauthenticated: "Necesitas acceder a tu cuenta o registrarte antes de continuar."
-      unconfirmed: "Necesitas confirmar tu cuenta antes de continuar."
+      unconfirmed: "Necesitas confirmar tu cuenta antes de continuar. Por favor revisa tu correo
+                    electrónico para confirmar tu cuenta en El Tlacuache."
       locked: "Tu cuenta está bloqueada."
       not_found_in_database: "La contraseña o el correo electrónico no son válidos."
       invalid: 'La contraseña o el correo electrónico no son válidos.'
@@ -22,6 +23,7 @@ es:
     sessions:
       signed_in: 'Sesión iniciada.'
       signed_out: 'Tu sesión ha terminado.'
+      already_signed_out: "Sesión terminada."
     passwords:
       send_instructions: 'Recibirás un email con instrucciones para cambiar tu contraseña en pocos minutos.'
       updated: 'Tu contraseña ha sido modificada. Ya has accedido a tu cuenta.'
@@ -37,9 +39,9 @@ es:
     unlocks:
       send_instructions: 'Recibirás un email con instrucciones para desbloquear tu cuenta en pocos minutos.'
       unlocked: 'Tu cuenta ha sido desbloqueada. Ya has accedido a tu cuenta.'
-    oauth_callbacks:
-      success: 'Has sido autorizado satisfactoriamente de la cuenta %{kind}.'
-      failure: 'No has sido autorizado en la cuenta %{kind} porque "%{reason}".'
+    omniauth_callbacks:
+      success: 'Has sido autorizado satisfactoriamente con tu cuenta de %{kind}.'
+      failure: 'No has sido autorizado con tu cuenta de %{kind} porque "%{reason}".'
     mailer:
       confirmation_instructions:
         subject: 'Instrucciones de confirmación'

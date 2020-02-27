@@ -1,7 +1,8 @@
 $theme-colors: (
    orange: #ff533d,
    green: #0bb688,
-   blue: rgba(21, 5, 253, 0.667)
+   blue: rgba(21, 5, 253, 0.667),
+   fbblue: #3b5998	
 );
 
 @import "bootstrap";
@@ -362,8 +363,13 @@ $theme-colors: (
 /***************************************************************************
 * Responsive
 *****************************************************************************/
-@include media-breakpoint-down(sm)
 
+.flexiwidth75
+{
+  width: 75%
+}
+
+@include media-breakpoint-down(sm)
 {
   .listing-wrapper
   {
@@ -375,4 +381,15 @@ $theme-colors: (
   {
     width: 90%;
   }
+
+
+}
+
+@include media-breakpoint-down(md)
+{
+  .flexiwidth75
+  {
+    width: 100%;
+  }
+
 }
